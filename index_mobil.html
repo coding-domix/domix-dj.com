@@ -7,23 +7,25 @@
     <meta name="description" content="Offizielle mobile Website von DOMIX, DJ und Music Producer aus Oesterreich.">
     <link rel="canonical" href="https://domix-dj.com/">
     <title>DOMIX - DJ & Music Producer</title>
+    <link rel="preload" href="images/domix/hero/stage-main.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="css/styles_mobil.css">
+    <script src="js/site.js" defer></script>
     <script>
         document.documentElement.classList.add("page-loading");
     </script>
 </head>
 
-<body class="mobile-page">
+<body class="mobile-page" data-reveal-selector=".reveal-on-scroll-mobile" data-reveal-threshold="0.16" data-reveal-on-load="true" data-page-loader="true">
     <header class="hero-mobile home-hero-mobile">
-        <img class="home-hero-bg-wordmark-mobile" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
+        <img class="home-hero-bg-wordmark-mobile" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="100vw" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
 
-        <span class="brand-mobile" aria-label="DOMIX"><img src="images/domix/brand/domix_logo.svg" alt="DOMIX"></span>
+        <span class="brand-mobile" aria-label="DOMIX"><img src="images/domix/brand/domix_logo.svg" alt="DOMIX" width="2000" height="600" decoding="async"></span>
 
         <div class="home-hero-copy-mobile">
-            <span class="home-hero-wordmark-wrap-mobile">
-                <img class="home-hero-wordmark-mobile home-hero-wordmark-solid-mobile" src="images/domix/brand/domix_logo.svg" alt="DOMIX">
-                <img class="home-hero-wordmark-mobile home-hero-wordmark-outline-mobile" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
-            </span>
+            <h1 class="home-hero-wordmark-wrap-mobile">
+                <img class="home-hero-wordmark-mobile home-hero-wordmark-solid-mobile" src="images/domix/brand/domix_logo.svg" alt="DOMIX" width="2000" height="600" decoding="async">
+                <img class="home-hero-wordmark-mobile home-hero-wordmark-outline-mobile" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="82vw" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
+            </h1>
             <p class="home-hero-subline-mobile">DJ &amp; PRODUCER</p>
             <div class="home-hero-genres-mobile" aria-label="Genres">
                 <span>TECH HOUSE</span>
@@ -31,15 +33,15 @@
                 <span>TECHNO</span>
             </div>
             <div class="home-hero-socials-mobile" aria-label="Social links">
-                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-tooltip="Instagram"><img src="images/social/instagram-icon.png" alt=""></a>
-                <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok" data-tooltip="TikTok"><img src="images/social/tiktok-icon.svg" alt=""></a>
-                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" data-tooltip="SoundCloud"><img src="images/social/soundcloud-icon.png" alt=""></a>
-                <a href="https://linktr.ee/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="All Socials" data-tooltip="All Socials"><img src="images/social/linktree-more.svg" alt=""></a>
+                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-tooltip="Instagram"><img src="images/social/instagram-icon.png" alt="" width="3000" height="3000" decoding="async"></a>
+                <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok" data-tooltip="TikTok"><img src="images/social/tiktok-icon.svg" alt="" width="150" height="150" decoding="async"></a>
+                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud" data-tooltip="SoundCloud"><img src="images/social/soundcloud-icon.png" alt="" width="512" height="512" decoding="async"></a>
+                <a href="https://linktr.ee/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="All Socials" data-tooltip="All Socials"><img src="images/social/linktree-more.svg" alt="" width="150" height="150" decoding="async"></a>
             </div>
         </div>
 
         <div class="domix-equipment-wrapper-mobile">
-            <img src="images/domix/hero/equipment.png" alt="Domix equipment" class="domix-equipment-mobile">
+            <img src="images/domix/hero/equipment.webp" srcset="images/domix/hero/equipment.webp 1920w" sizes="100vw" alt="Domix equipment" class="domix-equipment-mobile" width="1920" height="1280" loading="eager" decoding="async" fetchpriority="high">
         </div>
 
         <a href="#played-at-mobile" class="home-hero-scroll-mobile" aria-label="Scroll to played at">
@@ -58,7 +60,7 @@
 
     <main>
         <section class="played-at-section-mobile" id="played-at-mobile" aria-labelledby="played-at-title-mobile">
-            <img class="played-at-wordmark-mobile" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
+            <img class="played-at-wordmark-mobile" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="100vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="played-at-inner-mobile">
                 <div class="played-at-header-mobile">
                     <div class="played-at-heading-mobile">
@@ -109,16 +111,16 @@
 
                     <div class="played-at-media-mobile" aria-label="Event Bilder">
                         <figure class="played-at-image-card-mobile" data-event="1">
-                            <img src="images/domix/events/FlashOver%202026/FlashOver_1-1.jpg" alt="FlashOver Loidesthal 2026">
+                            <img src="images/domix/events/FlashOver%202026/FlashOver_1-1.webp" srcset="images/domix/events/FlashOver%202026/FlashOver_1-1.webp 1920w" sizes="50vw" alt="FlashOver Loidesthal 2026" width="1920" height="1280" loading="lazy" decoding="async">
                         </figure>
                         <figure class="played-at-image-card-mobile" data-event="2">
-                            <img src="images/domix/events/Lange%20Einkaufsnacht%202026/LangeEinkaufsnacht-8.jpg" alt="Lange Einkaufsnacht Gaenserndorf 2026">
+                            <img src="images/domix/events/Lange%20Einkaufsnacht%202026/LangeEinkaufsnacht-8.webp" srcset="images/domix/events/Lange%20Einkaufsnacht%202026/LangeEinkaufsnacht-8.webp 1920w" sizes="50vw" alt="Lange Einkaufsnacht Gaenserndorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
                         </figure>
                         <figure class="played-at-image-card-mobile" data-event="3">
-                            <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.jpg" alt="Saturday &amp; Bass Outback Wolkersdorf 2026">
+                            <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp" srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp 1920w" sizes="50vw" alt="Saturday &amp; Bass Outback Wolkersdorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
                         </figure>
                         <figure class="played-at-image-card-mobile" data-event="4">
-                            <img src="images/domix/events/Inferno%202025/Inferno-1.jpg" alt="Inferno Matzen 2025">
+                            <img src="images/domix/events/Inferno%202025/Inferno-1.jpg" alt="Inferno Matzen 2025" width="1802" height="1351" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -126,7 +128,7 @@
         </section>
 
         <section class="about-section-mobile reveal-on-scroll-mobile" id="about-mobile" aria-labelledby="about-title-mobile">
-            <img class="about-wordmark-mobile" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
+            <img class="about-wordmark-mobile" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="100vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="about-inner-mobile">
                 <div class="about-copy-mobile">
                     <span class="about-kicker-mobile">ABOUT</span>
@@ -140,20 +142,20 @@
                 </div>
 
                 <figure class="about-image-mobile">
-                    <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-01.jpg" alt="DOMIX performing live at the decks">
+                    <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-01.webp" srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-01.webp 1609w" sizes="100vw" alt="DOMIX performing live at the decks" width="1609" height="1920" loading="lazy" decoding="async">
                 </figure>
             </div>
         </section>
 
         <section class="listen-book-section-mobile reveal-on-scroll-mobile" id="listen-book-mobile" aria-labelledby="listen-book-title-mobile">
-            <img class="listen-book-wordmark-mobile" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
+            <img class="listen-book-wordmark-mobile" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="100vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="listen-book-inner-mobile">
                 <article class="listen-book-card-mobile listen-book-card-player-mobile">
                     <span class="listen-book-kicker-mobile">LATEST MIX</span>
                     <h2 id="listen-book-title-mobile">LISTEN TO DOMIX</h2>
                     <p>Experience the energy, selection and atmosphere of a live DOMIX set.</p>
                     <div class="soundcloud-player-mobile">
-                        <iframe title="DOMIX live at INFERNO Matzen Tech House Warmup on SoundCloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2175226479&color=%23ffd43b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <iframe title="DOMIX live at INFERNO Matzen Tech House Warmup on SoundCloud" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" loading="lazy" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2175226479&color=%23ffd43b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                         <div class="soundcloud-credit-mobile">
                             <a href="https://soundcloud.com/domix_dj" title="DOMIX" target="_blank" rel="noopener noreferrer">DOMIX</a>
                             <span aria-hidden="true">&middot;</span>
@@ -184,7 +186,7 @@
     <footer class="site-footer-mobile" aria-label="Footer">
         <div class="site-footer-row-mobile site-footer-main-mobile">
             <a class="site-footer-logo-mobile" href="index_mobil.html" aria-label="DOMIX Home">
-                <img src="images/domix/brand/domix_logo.svg" alt="DOMIX">
+                <img src="images/domix/brand/domix_logo.svg" alt="DOMIX" width="2000" height="600" loading="lazy" decoding="async">
             </a>
 
             <nav class="site-footer-nav-mobile" aria-label="Footer navigation">
@@ -201,13 +203,13 @@
             <div class="site-footer-partner-mobile">
                 <span>Official Partner</span>
                 <span aria-hidden="true">&bull;</span>
-                <a href="https://www.marchfelderbank.at/" target="_blank" rel="noopener noreferrer" aria-label="Visit Marchfelder Bank"><img src="images/domix/partners/marchfelder-bank-logo.png" alt="Marchfelder Bank"></a>
+                <a href="https://www.marchfelderbank.at/" target="_blank" rel="noopener noreferrer" aria-label="Visit Marchfelder Bank"><img src="images/domix/partners/marchfelder-bank-logo.png" alt="Marchfelder Bank" width="21072" height="3150" loading="lazy" decoding="async"></a>
             </div>
 
             <nav class="site-footer-socials-mobile" aria-label="Social links">
-                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.png" alt=""></a>
-                <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="images/social/tiktok-icon.svg" alt=""></a>
-                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.png" alt=""></a>
+                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.png" alt="" width="3000" height="3000" loading="lazy" decoding="async"></a>
+                <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="images/social/tiktok-icon.svg" alt="" width="150" height="150" loading="lazy" decoding="async"></a>
+                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.png" alt="" width="512" height="512" loading="lazy" decoding="async"></a>
             </nav>
 
             <p>All rights reserved</p>
@@ -215,38 +217,12 @@
     </footer>
 
     <script>
-        function unlockPage() {
-            document.documentElement.classList.remove('page-loading');
-        }
-
+        var domixImage = document.querySelector('.domix-equipment-mobile');
         window.addEventListener('scroll', function () {
-            var domixImage = document.querySelector('.domix-equipment-mobile');
             if (domixImage) {
                 domixImage.style.transform = 'translateY(' + (window.pageYOffset * 0.15) + 'px)';
             }
         }, { passive: true });
-
-        window.addEventListener('load', function () {
-            document.querySelectorAll('.reveal-on-scroll-mobile').forEach(function (section) {
-                if (!('IntersectionObserver' in window)) {
-                    section.classList.add('is-visible');
-                    return;
-                }
-
-                var observer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('is-visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.16 });
-
-                observer.observe(section);
-            });
-            setTimeout(unlockPage, 80);
-        }, { once: true });
-        setTimeout(unlockPage, 7000);
     </script>
 </body>
 
