@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Music von DOMIX, DJ und Producer aus Oesterreich: Releases, Remixes, Spotify Playlists und DJ Sets.">
+    <title>Music - DOMIX</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="subpage-body">
+    <main class="subpage-main">
+        <header class="hero subpage-hero shows-hero music-hero">
+            <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix"></a>
+
+            <nav class="desktop-hero-nav" aria-label="Primary navigation">
+                <a href="index.html">HOME</a>
+                <a href="shows.html">SHOWS</a>
+                <a href="music.html" aria-current="page">MUSIC</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+
+            <div class="subpage-headline-wrap">
+                <p class="subpage-eyebrow">RELEASES</p>
+                <div class="shows-hero-title-wrap">
+                    <img class="subpage-wordmark" src="images/domix/brand/domix-outline.png" alt="" aria-hidden="true">
+                    <h1 class="subpage-title">Music</h1>
+                </div>
+                <p class="subpage-description">Remixes, DJ-Sets &amp; Playlists</p>
+            </div>
+        </header>
+
+        <section class="shows-section music-featured-section" aria-labelledby="featured-release-title">
+            <div class="music-page-inner">
+                <div class="music-section-heading">
+                    <p class="shows-section-eyebrow">Featured</p>
+                    <h2 id="featured-release-title">Latest Release</h2>
+                </div>
+
+                <div class="music-featured" id="featured-release" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="shows-section music-grid-section" aria-labelledby="remixes-title">
+            <div class="music-page-inner">
+                <div class="music-section-heading">
+                    <p class="shows-section-eyebrow">Releases</p>
+                    <h2 id="remixes-title">Remixes</h2>
+                </div>
+
+                <div class="music-search-row">
+                    <input class="music-search-input" id="music-search" type="search" placeholder="Search music..." autocomplete="off" aria-label="Search music">
+                </div>
+
+                <div class="music-card-grid" id="remixes-grid" aria-live="polite"></div>
+                <div class="music-remixes-toggle-wrap" id="remixes-toggle-wrap">
+                    <button class="music-remixes-toggle" id="remixes-toggle" type="button" aria-expanded="false">VIEW ALL REMIXES</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="shows-section music-sets-section" aria-labelledby="dj-sets-title">
+            <div class="music-page-inner">
+                <div class="music-section-heading">
+                    <p class="shows-section-eyebrow">Live</p>
+                    <h2 id="dj-sets-title">DJ Sets</h2>
+                </div>
+
+                <div class="music-set-list" id="sets-list" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="shows-section music-grid-section music-playlists-section" aria-labelledby="playlists-title">
+            <div class="music-page-inner">
+                <div class="music-section-heading">
+                    <p class="shows-section-eyebrow">Spotify</p>
+                    <h2 id="playlists-title">Playlists</h2>
+                </div>
+
+                <div class="music-card-grid music-playlist-grid" id="playlists-grid" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="shows-section music-follow-section" aria-labelledby="music-follow-title">
+            <div class="music-follow-inner">
+                <p class="shows-section-eyebrow">FOLLOW</p>
+                <h2 id="music-follow-title">Stay Connected</h2>
+                <p>Follow DOMIX on SoundCloud and Spotify for new releases, mixes and DJ sets.</p>
+                <div class="music-follow-actions">
+                    <a class="music-action-button" href="#" data-placeholder-link>SOUNDCLOUD</a>
+                    <a class="music-action-button music-action-button-secondary" href="#" data-placeholder-link>SPOTIFY</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+        <div class="site-footer-row site-footer-main">
+            <a class="site-footer-logo" href="index.html" aria-label="DOMIX Home">
+                <img src="images/domix/brand/domix_logo.svg" alt="DOMIX">
+            </a>
+
+            <nav class="site-footer-nav" aria-label="Footer navigation">
+                <a href="shows.html">SHOWS</a>
+                <a href="music.html" aria-current="page">MUSIC</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+
+            <p>&copy; 2026 DOMIX</p>
+        </div>
+
+        <div class="site-footer-row site-footer-meta">
+            <div class="site-footer-partner">
+                <span>Official Partner</span>
+                <span aria-hidden="true">&bull;</span>
+                <a href="https://www.marchfelderbank.at/" target="_blank" rel="noopener noreferrer" aria-label="Visit Marchfelder Bank"><img src="images/domix/partners/marchfelder-bank-logo.png" alt="Marchfelder Bank"></a>
+            </div>
+
+            <nav class="site-footer-socials" aria-label="Social links">
+                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.png" alt=""></a>
+                <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="images/social/tiktok-icon.svg" alt=""></a>
+                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.png" alt=""></a>
+            </nav>
+
+            <p>All rights reserved</p>
+        </div>
+    </footer>
+    <script>
+        const musicReleases = [
+            {
+                title: 'Starships x Stay Focused (DOMIX Mashup)',
+                category: 'mashup',
+                genre: 'Tech House',
+                tempo: '130 BPM',
+                duration: '04:03',
+                cover: 'releases/starships-x-stay-focused/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/starships-x-stayfocused-domix-mashup',
+                spotifyUrl: '#',
+                downloadUrl: 'releases/starships-x-stay-focused/starships-x-stay-focused-domix-mashup.mp3',
+                previewUrl: 'releases/starships-x-stay-focused/starships-x-stay-focused-domix-mashup.mp3',
+                featured: false,
+                platform: 'Direct Audio'
+            },
+            {
+                title: 'ENERGY EXTRAVADANCE RADIO SET',
+                category: 'set',
+                genre: 'Open Format',
+                tempo: 'VARIED BPM',
+                duration: '60:00',
+                cover: 'images/domix/sets/domix-extravadance.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/energy-extravadance-radio-set-24-07-2026',
+                spotifyUrl: '#',
+                downloadUrl: '#',
+                previewUrl: 'releases/energy-extravadance-24-07-2026/preview.mp3',
+                featured: true,
+                featuredTitle: 'ENERGY EXTRAVADANCE RADIO SET',
+                featuredCategory: 'RADIO SET / NRJ',
+                featuredPrimaryLabel: 'Broadcast',
+                featuredPrimaryValue: 'ENERGY AUSTRIA',
+                featuredSecondaryLabel: 'Genre',
+                featuredSecondaryValue: 'OPEN FORMAT',
+                platform: 'SoundCloud',
+                setType: 'RADIO SET',
+                event: 'ENERGY EXTRAVADANCE',
+                setMeta: 'NRJ · OPEN FORMAT · 60 MIN'
+            },
+            {
+                title: 'Inferno Matzen Tech House Warmup',
+                category: 'set',
+                genre: 'Tech House',
+                duration: '90:00',
+                cover: 'images/domix/events/Inferno%202025/Inferno-1.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/domix-live-at-inferno-matzen-2025-tech-house-warmup',
+                spotifyUrl: '#',
+                downloadUrl: '#',
+                previewUrl: '',
+                platform: 'SoundCloud',
+                setType: 'LIVE SET',
+                event: 'INFERNO MATZEN',
+                setMeta: 'TECH HOUSE · OPENING SET · 60 MIN'
+            },
+            {
+                title: 'Hotel Room Service x I Adore You (DOMIX Mashup)',
+                category: 'remix',
+                genre: 'Afro House',
+                duration: '00:51',
+                cover: 'releases/remixes/hotel-room-service-x-i-adore-you/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/hotel-room-service-x-i-adore-you-domix-afro-house-mashup',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/hotel-room-service-x-i-adore-you/preview.mp3',
+                id: 'hotel-room-service-x-i-adore-you',
+                isLatest: true,
+                latestOrder: 3
+            },
+            {
+                title: 'Where Have You Been (DOMIX Remix)',
+                category: 'remix',
+                genre: 'House',
+                duration: '00:30',
+                cover: 'releases/remixes/where-have-you-been/cover.png',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/where-have-you-been',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/where-have-you-been/preview.mp3',
+                id: 'where-have-you-been'
+            },
+            {
+                title: 'TRAUM x INTOXICATED (DOMIX Edit)',
+                category: 'remix',
+                genre: 'Tech House',
+                duration: '00:39',
+                cover: 'releases/remixes/traum-x-intoxicated/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/traum-x-intoxicated-cro-x-martin-solveig-x-sam-collins-sky-phill-batz-mashup-domix-edit-1',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/traum-x-intoxicated/preview.mp3',
+                id: 'traum-x-intoxicated'
+            },
+            {
+                title: 'Starships x Stay Focused (DOMIX Mashup)',
+                category: 'remix',
+                genre: 'Tech House',
+                duration: '00:36',
+                cover: 'releases/remixes/starships-x-stay-focused/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/starships-x-stayfocused-domix-mashup',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/starships-x-stay-focused/preview.mp3',
+                id: 'starships-x-stay-focused-preview',
+                isLatest: true,
+                latestOrder: 1
+            },
+            {
+                title: 'Smells Like Teen Spirit (DOMIX Edit)',
+                category: 'remix',
+                genre: 'Hard Techno',
+                duration: '00:40',
+                cover: 'releases/remixes/smells-like-teen-spirit/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/restricted-smells-like-teen-spirit-domix-techno-edit',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/smells-like-teen-spirit/preview.mp3',
+                id: 'smells-like-teen-spirit'
+            },
+            {
+                title: 'Mondschein x Strangers (DOMIX DnB Mashup)',
+                category: 'remix',
+                genre: 'Drum & Bass',
+                duration: '00:34',
+                cover: 'releases/remixes/mondschein-x-strangers/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/mondschein-domix-dnb-mashup',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/mondschein-x-strangers/preview.mp3',
+                id: 'mondschein-x-strangers'
+            },
+            {
+                title: 'In Da Club x I Need A Dollar (DOMIX Mashup)',
+                category: 'remix',
+                genre: 'Tech House',
+                duration: '00:48',
+                cover: 'releases/remixes/in-da-club-x-i-need-a-dollar/cover.jpg',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/in-da-club-x-i-need-a-dollar-domix-edit-1',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/in-da-club-x-i-need-a-dollar/preview.mp3',
+                id: 'in-da-club-x-i-need-a-dollar'
+            },
+            {
+                title: 'Wissen wer der Babo ist x Breathe (DOMIX Mashup)',
+                category: 'remix',
+                genre: 'Hard Techno',
+                duration: '00:43',
+                cover: 'releases/remixes/wissen-wer-der-babo-ist-x-breathe/cover.jpg',
+                soundcloudUrl: '#',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/wissen-wer-der-babo-ist-x-breathe/preview.mp3',
+                id: 'wissen-wer-der-babo-ist-x-breathe',
+                isLatest: true,
+                latestOrder: 2
+            },
+            {
+                title: 'Set Fire to the Rain x On & On (DOMIX Mashup)',
+                category: 'remix',
+                genre: 'Drum & Bass',
+                duration: '00:33',
+                cover: 'releases/remixes/set-fire-to-the-rain-x-on-and-on/cover.png',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/set-fire-to-the-rain-x-on-on',
+                spotifyUrl: '#',
+                previewUrl: 'releases/remixes/set-fire-to-the-rain-x-on-and-on/preview.mp3',
+                id: 'set-fire-to-the-rain-x-on-and-on'
+            }
+        ];
+
+        const musicPlaylists = [
+            {
+                title: 'CLUB CONTROL by DOMIX',
+                description: 'Tech House selections by DOMIX',
+                cover: 'images/domix/playlists/club-control.png',
+                spotifyUrl: 'https://open.spotify.com/playlist/1GiP3hHt4zSkTb7bd1Gqcz?si=79c487ecb9614d5e'
+            },
+            {
+                title: 'NITELIFE by DOMIX',
+                description: 'Hard beats from the underground',
+                cover: 'images/domix/playlists/nitelife.png',
+                spotifyUrl: 'https://open.spotify.com/playlist/6gSRVVYjM5Wu6qV8qIWpDr?si=383cd3094cf84a24'
+            },
+            {
+                title: 'RUMBLIN by DOMIX',
+                description: "Jungle is massive, keep the bass rumblin'",
+                cover: 'images/domix/playlists/rumblin.png',
+                spotifyUrl: 'https://open.spotify.com/playlist/1XzXc9NFBpruA7BME4FpKY?si=26bfad862b2a4b83'
+            }
+        ];
+
+        const categoryLabels = {
+            mashup: 'Mashup',
+            remix: 'Remix',
+            set: 'DJ Set'
+        };
+
+        const featuredReleaseSection = document.querySelector('.music-featured-section');
+        const featuredReleaseContainer = document.getElementById('featured-release');
+        const remixesGrid = document.getElementById('remixes-grid');
+        const playlistsGrid = document.getElementById('playlists-grid');
+        const setsList = document.getElementById('sets-list');
+        const musicSearch = document.getElementById('music-search');
+        const remixesToggle = document.getElementById('remixes-toggle');
+        const remixesToggleWrap = document.getElementById('remixes-toggle-wrap');
+        const featuredPreviewAudio = new Audio();
+        const remixPreviewAudio = new Audio();
+        let featuredLayoutFrame = 0;
+        let featuredInfoWidth = 0;
+        let featuredContentObserver = null;
+        let activeRemixPreviewId = null;
+        let showAllRemixes = false;
+        featuredPreviewAudio.preload = 'metadata';
+        remixPreviewAudio.preload = 'metadata';
+
+        function clearFeaturedCoverSync() {
+            if (featuredContentObserver) featuredContentObserver.disconnect();
+            featuredReleaseContainer.classList.remove('is-cover-height-synced');
+            featuredReleaseContainer.style.removeProperty('--featured-cover-size');
+            featuredReleaseContainer.style.removeProperty('--featured-info-width');
+            featuredReleaseContainer.style.removeProperty('--featured-total-width');
+            featuredInfoWidth = 0;
+        }
+
+        function applyFeaturedCoverSize(content) {
+            if (!content || !window.matchMedia('(min-width: 1201px)').matches || !featuredInfoWidth) return;
+
+            const coverSize = content.getBoundingClientRect().height;
+            const columnGap = parseFloat(getComputedStyle(featuredReleaseContainer).columnGap) || 0;
+            featuredReleaseContainer.style.setProperty('--featured-cover-size', `${coverSize}px`);
+            featuredReleaseContainer.style.setProperty('--featured-total-width', `${coverSize + columnGap + featuredInfoWidth}px`);
+        }
+
+        function syncFeaturedCoverToInfoCard() {
+            cancelAnimationFrame(featuredLayoutFrame);
+            featuredLayoutFrame = requestAnimationFrame(function () {
+                clearFeaturedCoverSync();
+                if (!window.matchMedia('(min-width: 1201px)').matches) return;
+
+                const content = featuredReleaseContainer.querySelector('.music-featured-content');
+                if (!content) return;
+
+                featuredInfoWidth = content.getBoundingClientRect().width + 40;
+                featuredReleaseContainer.style.setProperty('--featured-info-width', `${featuredInfoWidth}px`);
+                featuredReleaseContainer.classList.add('is-cover-height-synced');
+                applyFeaturedCoverSize(content);
+
+                if ('ResizeObserver' in window) {
+                    featuredContentObserver = new ResizeObserver(function () {
+                        applyFeaturedCoverSize(content);
+                    });
+                    featuredContentObserver.observe(content);
+                }
+            });
+        }
+
+        function releaseMatchesSearch(release, query) {
+            if (!query) return true;
+            return [release.title, release.genre, release.category, categoryLabels[release.category]]
+                .filter(Boolean)
+                .some(function (value) {
+                    return value.toLowerCase().includes(query);
+                });
+        }
+
+        function playlistMatchesSearch(playlist, query) {
+            if (!query) return true;
+            return [playlist.title, playlist.description, 'playlist', 'spotify']
+                .some(function (value) {
+                    return value.toLowerCase().includes(query);
+                });
+        }
+
+        function createWaveform() {
+            const barCount = 40;
+            const waveCycles = 3.5;
+            return Array.from({ length: barCount }, function (_, index) {
+                const wavePosition = index / (barCount - 1) * Math.PI * 2 * waveCycles;
+                const barHeight = Math.round(30 + ((Math.sin(wavePosition) + 1) / 2) * 50);
+                return `<span style="--bar-height: ${barHeight}%; --wave-delay: -${((barCount - 1 - index) * 0.035).toFixed(3)}s"></span>`;
+            }).join('');
+        }
+
+        function placeholderLinkAttributes(url) {
+            return url === '#' ? ' data-placeholder-link' : ' target="_blank" rel="noopener noreferrer"';
+        }
+
+        function downloadLinkAttributes(url) {
+            return url === '#' ? ' data-placeholder-link' : ' download';
+        }
+
+        function renderEmpty(label) {
+            return `<p class="music-empty">${label}</p>`;
+        }
+
+        function setRemixPlaybackState(isPlaying) {
+            remixesGrid.querySelectorAll('[data-remix-id]').forEach(function (card) {
+                const isSelected = card.dataset.remixId === activeRemixPreviewId;
+                const isActive = isPlaying && isSelected;
+                const canResume = isSelected && !isPlaying && remixPreviewAudio.currentTime > 0;
+                const title = card.dataset.releaseTitle;
+                card.classList.toggle('is-playing', isActive);
+                card.classList.toggle('is-paused', canResume);
+
+                card.querySelectorAll('[data-remix-preview-toggle]').forEach(function (control) {
+                    const isListenButton = control.classList.contains('music-track-listen');
+                    const action = isActive ? 'Pause' : (canResume ? 'Resume' : 'Play');
+                    if (isListenButton) control.textContent = isActive ? 'PAUSE' : (canResume ? 'RESUME' : 'PREVIEW');
+                    control.setAttribute('aria-label', `${action} preview of ${title}`);
+                    control.setAttribute('aria-pressed', String(isActive));
+                });
+            });
+        }
+
+        function updateRemixPreviewProgress() {
+            const duration = remixPreviewAudio.duration;
+            const progress = Number.isFinite(duration) && duration > 0
+                ? Math.min(1, remixPreviewAudio.currentTime / duration)
+                : 0;
+
+            remixesGrid.querySelectorAll('[data-remix-id]').forEach(function (card) {
+                const progressFill = card.querySelector('.music-preview-progress span');
+                if (!progressFill) return;
+                const isSelected = card.dataset.remixId === activeRemixPreviewId;
+                progressFill.style.width = `${isSelected ? progress * 100 : 0}%`;
+            });
+        }
+
+        function pauseRemixPreview(resetProgress) {
+            remixPreviewAudio.pause();
+            if (resetProgress && remixPreviewAudio.src) remixPreviewAudio.currentTime = 0;
+            if (resetProgress) activeRemixPreviewId = null;
+            setRemixPlaybackState(false);
+            updateRemixPreviewProgress();
+        }
+
+        function playRemixPreview(release) {
+            if (!release.previewUrl) return;
+
+            pauseFeaturedPreview(false);
+            const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
+            if (remixPreviewAudio.src !== absoluteUrl) {
+                remixPreviewAudio.src = absoluteUrl;
+                remixPreviewAudio.load();
+            }
+
+            activeRemixPreviewId = release.id;
+            const playRequest = remixPreviewAudio.play();
+            if (playRequest) {
+                playRequest.catch(function () {
+                    activeRemixPreviewId = null;
+                    setRemixPlaybackState(false);
+                    updateRemixPreviewProgress();
+                });
+            }
+        }
+
+        function toggleRemixPreview(release) {
+            const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
+            const isCurrentPreviewPlaying = !remixPreviewAudio.paused
+                && remixPreviewAudio.src === absoluteUrl
+                && activeRemixPreviewId === release.id;
+
+            if (isCurrentPreviewPlaying) {
+                pauseRemixPreview(false);
+                return;
+            }
+            playRemixPreview(release);
+        }
+
+        function seekRemixPreview(release, progress, startPlayback) {
+            if (!release.previewUrl) return;
+
+            pauseFeaturedPreview(false);
+            const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
+            const clampedProgress = Math.min(1, Math.max(0, progress));
+            const applySeek = function () {
+                if (!Number.isFinite(remixPreviewAudio.duration) || remixPreviewAudio.duration <= 0) return;
+                activeRemixPreviewId = release.id;
+                remixPreviewAudio.currentTime = remixPreviewAudio.duration * clampedProgress;
+                updateRemixPreviewProgress();
+                if (startPlayback && remixPreviewAudio.paused) playRemixPreview(release);
+            };
+
+            if (remixPreviewAudio.src !== absoluteUrl) {
+                remixPreviewAudio.pause();
+                activeRemixPreviewId = release.id;
+                remixPreviewAudio.src = absoluteUrl;
+                remixPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
+                remixPreviewAudio.load();
+                setRemixPlaybackState(false);
+                updateRemixPreviewProgress();
+                return;
+            }
+
+            if (remixPreviewAudio.readyState >= 1) {
+                applySeek();
+            } else {
+                remixPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
+            }
+        }
+
+        function updateFeaturedWaveformProgress() {
+            const waveform = featuredReleaseContainer.querySelector('.music-waveform');
+            if (!waveform) return;
+
+            const duration = featuredPreviewAudio.duration;
+            const progress = Number.isFinite(duration) && duration > 0
+                ? featuredPreviewAudio.currentTime / duration
+                : 0;
+            const bars = waveform.querySelectorAll('span');
+
+            waveform.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
+
+            bars.forEach(function (bar, index) {
+                bar.classList.toggle('is-progressed', progress > index / bars.length);
+            });
+        }
+
+        function seekFeaturedPreview(release, progress, startPlayback) {
+            if (!release.previewUrl) return;
+
+            const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
+            const clampedProgress = Math.min(1, Math.max(0, progress));
+            const applySeek = function () {
+                if (!Number.isFinite(featuredPreviewAudio.duration) || featuredPreviewAudio.duration <= 0) return;
+                featuredPreviewAudio.currentTime = featuredPreviewAudio.duration * clampedProgress;
+                updateFeaturedWaveformProgress();
+                if (startPlayback && featuredPreviewAudio.paused) {
+                    playFeaturedPreview(release.previewUrl);
+                }
+            };
+
+            if (featuredPreviewAudio.src !== absoluteUrl) {
+                featuredPreviewAudio.src = absoluteUrl;
+                featuredPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
+                featuredPreviewAudio.load();
+                return;
+            }
+
+            if (featuredPreviewAudio.readyState >= 1) {
+                applySeek();
+            } else {
+                featuredPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
+            }
+        }
+
+        function setFeaturedPlaybackState(isPlaying) {
+            const cover = featuredReleaseContainer.querySelector('.music-featured-cover');
+            const waveform = featuredReleaseContainer.querySelector('.music-waveform');
+            const controls = featuredReleaseContainer.querySelectorAll('[data-featured-preview-toggle]');
+            const canResume = !isPlaying && featuredPreviewAudio.currentTime > 0;
+
+            if (cover) cover.classList.toggle('is-playing', isPlaying);
+            if (waveform) waveform.classList.toggle('is-playing', isPlaying);
+
+            controls.forEach(function (control) {
+                const title = control.dataset.releaseTitle || 'featured release';
+                if (control.classList.contains('music-featured-listen')) {
+                    control.textContent = isPlaying ? 'PAUSE' : (canResume ? 'RESUME' : 'LISTEN');
+                    control.setAttribute('aria-label', `${isPlaying ? 'Pause' : (canResume ? 'Resume' : 'Play')} preview of ${title}`);
+                    return;
+                }
+                control.setAttribute('aria-pressed', String(isPlaying));
+                control.setAttribute('aria-label', `${isPlaying ? 'Pause' : (canResume ? 'Resume' : 'Play')} preview of ${title}`);
+            });
+        }
+
+        function playFeaturedPreview(url) {
+            if (!url) return;
+
+            pauseRemixPreview(false);
+            const absoluteUrl = new URL(url, document.baseURI).href;
+            if (featuredPreviewAudio.src !== absoluteUrl) {
+                featuredPreviewAudio.src = absoluteUrl;
+                featuredPreviewAudio.load();
+            }
+
+            const playRequest = featuredPreviewAudio.play();
+            if (playRequest) {
+                playRequest.catch(function () {
+                    setFeaturedPlaybackState(false);
+                });
+            }
+        }
+
+        function pauseFeaturedPreview(resetProgress) {
+            featuredPreviewAudio.pause();
+            if (resetProgress && featuredPreviewAudio.src) {
+                featuredPreviewAudio.currentTime = 0;
+                updateFeaturedWaveformProgress();
+            }
+            setFeaturedPlaybackState(false);
+        }
+
+        function toggleFeaturedPreview(url) {
+            const absoluteUrl = new URL(url, document.baseURI).href;
+            if (!featuredPreviewAudio.paused && featuredPreviewAudio.src === absoluteUrl) {
+                pauseFeaturedPreview(false);
+                return;
+            }
+            playFeaturedPreview(url);
+        }
+
+        function bindFeaturedPreview(release) {
+            const controls = featuredReleaseContainer.querySelectorAll('[data-featured-preview-toggle]');
+            const waveform = featuredReleaseContainer.querySelector('.music-waveform');
+
+            controls.forEach(function (control) {
+                control.addEventListener('click', function () {
+                    toggleFeaturedPreview(release.previewUrl);
+                });
+            });
+
+            if (waveform) {
+                waveform.addEventListener('click', function (event) {
+                    const bounds = waveform.getBoundingClientRect();
+                    if (!bounds.width) return;
+                    seekFeaturedPreview(release, (event.clientX - bounds.left) / bounds.width, true);
+                });
+
+                waveform.addEventListener('keydown', function (event) {
+                    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+                    event.preventDefault();
+
+                    if (event.key === 'Home' || event.key === 'End') {
+                        seekFeaturedPreview(release, event.key === 'Home' ? 0 : 1);
+                        return;
+                    }
+
+                    const duration = featuredPreviewAudio.duration;
+                    if (!Number.isFinite(duration) || duration <= 0) return;
+                    const direction = event.key === 'ArrowRight' ? 1 : -1;
+                    seekFeaturedPreview(release, (featuredPreviewAudio.currentTime + direction * 5) / duration);
+                });
+            }
+
+            const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
+            setFeaturedPlaybackState(!featuredPreviewAudio.paused && featuredPreviewAudio.src === absoluteUrl);
+            updateFeaturedWaveformProgress();
+        }
+
+        function renderFeatured(releases) {
+            const release = releases.find(function (item) { return item.featured; });
+            if (!release) {
+                pauseFeaturedPreview(true);
+                clearFeaturedCoverSync();
+                featuredReleaseContainer.innerHTML = renderEmpty('No featured release found.');
+                return;
+            }
+
+            featuredReleaseContainer.innerHTML = `
+                <button class="music-featured-cover" type="button" data-featured-preview-toggle data-release-title="${release.title}" aria-label="Play preview of ${release.title}" aria-pressed="false">
+                    <img src="${release.cover}" alt="${release.title} cover" loading="lazy">
+                    <span class="music-play-icon" aria-hidden="true"></span>
+                </button>
+                <div class="music-featured-content">
+                    <p class="music-track-category">${release.featuredCategory || `${categoryLabels[release.category]} / ${release.genre}`}</p>
+                    <h3>${release.featuredTitle || release.title}</h3>
+                    <dl class="music-track-details">
+                        <div><dt>${release.featuredPrimaryLabel || 'Tempo'}</dt><dd>${release.featuredPrimaryValue || release.tempo}</dd></div>
+                        <div><dt>${release.featuredSecondaryLabel || 'Genre'}</dt><dd>${release.featuredSecondaryValue || release.genre}</dd></div>
+                    </dl>
+                    <div class="music-waveform" role="slider" tabindex="0" aria-label="Track position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">${createWaveform()}</div>
+                    <div class="music-featured-actions">
+                        <button class="music-action-button music-featured-listen" type="button" data-featured-preview-toggle data-release-title="${release.title}" aria-label="Play preview of ${release.title}">LISTEN</button>
+                        <a class="music-action-button music-action-button-secondary" href="${release.soundcloudUrl || '#'}" target="_blank" rel="noopener noreferrer">SOUNDCLOUD ↗</a>
+                    </div>
+                </div>
+            `;
+
+            bindFeaturedPreview(release);
+            syncFeaturedCoverToInfoCard();
+        }
+
+        function renderTrackCards(container, releases, emptyLabel) {
+            if (!releases.length) {
+                pauseRemixPreview(true);
+                container.innerHTML = renderEmpty(emptyLabel);
+                return;
+            }
+
+            container.innerHTML = releases.map(function (release) {
+                return `
+                    <div class="music-track-card-shell${release.soundcloudUrl !== '#' ? ' has-soundcloud' : ''}" data-remix-id="${release.id}" data-release-title="${release.title}">
+                        <article class="music-track-card">
+                            <button class="music-track-cover" type="button" data-remix-preview-toggle aria-label="Play preview of ${release.title}" aria-pressed="false">
+                                <img src="${release.cover}" alt="${release.title} cover" loading="lazy">
+                                <span class="music-play-icon" aria-hidden="true"></span>
+                                <span class="music-preview-progress" aria-hidden="true"><span></span></span>
+                            </button>
+                            <div class="music-track-card-body">
+                                <span class="music-track-category">${categoryLabels[release.category]} / ${release.genre}</span>
+                                <span class="music-track-title">${release.title}</span>
+                                <span class="music-track-meta">PREVIEW · ${release.duration}</span>
+                                <span class="music-track-actions">
+                                    <button class="music-track-listen" type="button" data-remix-preview-toggle aria-label="Play preview of ${release.title}" aria-pressed="false">PREVIEW</button>
+                                    ${release.soundcloudUrl !== '#' ? `<a class="music-track-soundcloud" href="${release.soundcloudUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open ${release.title} on SoundCloud">FULL TRACK ↗</a>` : ''}
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                `;
+            }).join('');
+
+            setRemixPlaybackState(!remixPreviewAudio.paused);
+            updateRemixPreviewProgress();
+        }
+
+        function renderPlaylistCards(container, playlists) {
+            if (!playlists.length) {
+                container.innerHTML = renderEmpty('No playlists found.');
+                return;
+            }
+
+            container.innerHTML = playlists.map(function (playlist) {
+                return `
+                    <a class="music-track-card music-playlist-card" href="${playlist.spotifyUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open ${playlist.title} on Spotify">
+                        <span class="music-track-cover">
+                            <img src="${playlist.cover}" alt="${playlist.title} cover" loading="lazy">
+                        </span>
+                        <span class="music-track-card-body">
+                            <span class="music-track-category">Spotify Playlist</span>
+                            <span class="music-track-title">${playlist.title}</span>
+                            <span class="music-playlist-description">${playlist.description}</span>
+                            <span class="music-track-listen">OPEN SPOTIFY</span>
+                        </span>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function renderSetCards(container, releases) {
+            if (!releases.length) {
+                container.innerHTML = renderEmpty('No DJ sets found.');
+                return;
+            }
+
+            container.innerHTML = releases.map(function (release) {
+                return `
+                    <a class="music-set-card" href="${release.soundcloudUrl}"${placeholderLinkAttributes(release.soundcloudUrl)} data-preview-url="${release.previewUrl || ''}" aria-label="Listen to ${release.title}">
+                        <span class="music-set-cover">
+                            <img src="${release.cover}" alt="${release.title} cover" loading="lazy">
+                        </span>
+                        <span class="music-set-content">
+                            <span class="music-set-heading">
+                                <span>
+                                    <span class="music-track-category">${release.setType ? `${release.setType} / ${release.event}` : (release.event || categoryLabels[release.category])}</span>
+                                    <span class="music-set-title">${release.title}</span>
+                                </span>
+                            </span>
+                            <span class="music-set-meta">${release.setMeta || `${release.genre} / ${release.duration}`}</span>
+                            <span class="music-waveform" aria-hidden="true">${createWaveform()}</span>
+                        </span>
+                        <span class="music-set-action">LISTEN ON SOUNDCLOUD ↗</span>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function renderMusicPage() {
+            const query = musicSearch.value.trim().toLowerCase();
+            const visibleReleases = musicReleases.filter(function (release) {
+                return releaseMatchesSearch(release, query);
+            });
+            const visiblePlaylists = musicPlaylists.filter(function (playlist) {
+                return playlistMatchesSearch(playlist, query);
+            });
+            const matchingRemixes = visibleReleases.filter(function (release) { return release.category === 'remix'; });
+            const remixesToRender = (showAllRemixes || query)
+                ? matchingRemixes
+                : matchingRemixes
+                    .filter(function (release) { return release.isLatest; })
+                    .sort(function (first, second) { return first.latestOrder - second.latestOrder; });
+
+            renderFeatured(visibleReleases);
+            renderTrackCards(remixesGrid, remixesToRender, 'No remixes found.');
+            renderPlaylistCards(playlistsGrid, visiblePlaylists);
+            renderSetCards(setsList, visibleReleases.filter(function (release) { return release.category === 'set'; }));
+
+            remixesToggleWrap.hidden = Boolean(query) || matchingRemixes.length <= 3;
+            remixesToggle.setAttribute('aria-expanded', String(showAllRemixes));
+            remixesToggle.textContent = showAllRemixes ? 'SHOW LESS' : 'VIEW ALL REMIXES';
+        }
+
+        remixesGrid.addEventListener('click', function (event) {
+            const progress = event.target.closest('.music-preview-progress');
+            if (progress) {
+                const card = progress.closest('[data-remix-id]');
+                const release = musicReleases.find(function (item) {
+                    return item.id === card.dataset.remixId;
+                });
+                const bounds = progress.getBoundingClientRect();
+                if (release && bounds.width) {
+                    seekRemixPreview(release, (event.clientX - bounds.left) / bounds.width, true);
+                }
+                return;
+            }
+
+            const control = event.target.closest('[data-remix-preview-toggle]');
+            if (!control) return;
+
+            const card = control.closest('[data-remix-id]');
+            const release = musicReleases.find(function (item) {
+                return item.id === card.dataset.remixId;
+            });
+            if (release) toggleRemixPreview(release);
+        });
+
+        remixesToggle.addEventListener('click', function () {
+            showAllRemixes = !showAllRemixes;
+            renderMusicPage();
+        });
+
+        document.addEventListener('click', function (event) {
+            const placeholderLink = event.target.closest('[data-placeholder-link]');
+            if (!placeholderLink) return;
+            event.preventDefault();
+            if (placeholderLink.classList.contains('music-track-card')) placeholderLink.blur();
+        });
+
+        featuredPreviewAudio.addEventListener('playing', function () {
+            setFeaturedPlaybackState(true);
+        });
+        featuredPreviewAudio.addEventListener('pause', function () {
+            setFeaturedPlaybackState(false);
+        });
+        featuredPreviewAudio.addEventListener('timeupdate', updateFeaturedWaveformProgress);
+        featuredPreviewAudio.addEventListener('loadedmetadata', updateFeaturedWaveformProgress);
+        featuredPreviewAudio.addEventListener('ended', function () {
+            pauseFeaturedPreview(true);
+        });
+
+        remixPreviewAudio.addEventListener('playing', function () {
+            setRemixPlaybackState(true);
+            updateRemixPreviewProgress();
+        });
+        remixPreviewAudio.addEventListener('pause', function () {
+            setRemixPlaybackState(false);
+        });
+        remixPreviewAudio.addEventListener('timeupdate', updateRemixPreviewProgress);
+        remixPreviewAudio.addEventListener('loadedmetadata', updateRemixPreviewProgress);
+        remixPreviewAudio.addEventListener('ended', function () {
+            pauseRemixPreview(true);
+        });
+
+        if (featuredReleaseSection && 'IntersectionObserver' in window) {
+            const featuredReleaseObserver = new IntersectionObserver(function (entries) {
+                if (!entries[0].isIntersecting) {
+                    pauseFeaturedPreview(true);
+                }
+            }, { threshold: 0.05 });
+            featuredReleaseObserver.observe(featuredReleaseSection);
+        }
+
+        musicSearch.addEventListener('input', renderMusicPage);
+        window.addEventListener('resize', syncFeaturedCoverToInfoCard);
+        if (document.fonts) document.fonts.ready.then(syncFeaturedCoverToInfoCard);
+        renderMusicPage();
+    </script>
+</body>
+
+</html>
