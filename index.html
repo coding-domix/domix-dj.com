@@ -110,7 +110,7 @@
                         <a class="played-at-card" href="shows.html#flashover-show" data-event="1">
                             <span class="played-at-meta">13.05.2026</span>
                             <span class="played-at-name">FLASHOVER</span>
-                            <span class="played-at-location">Loidesthal</span>
+                            <span class="played-at-location">Loidesthal <span class="played-at-card-date">&bull; 13.05.2026</span></span>
                             <svg class="played-at-arrow" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -119,7 +119,7 @@
                         <a class="played-at-card" href="shows.html#lange-einkaufsnacht-show" data-event="2">
                             <span class="played-at-meta">08.05.2026</span>
                             <span class="played-at-name">LANGE EINKAUFSNACHT</span>
-                            <span class="played-at-location">Gaenserndorf</span>
+                            <span class="played-at-location">Gaenserndorf <span class="played-at-card-date">&bull; 08.05.2026</span></span>
                             <svg class="played-at-arrow" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -128,7 +128,7 @@
                         <a class="played-at-card" href="shows.html#saturday-bass-show" data-event="3">
                             <span class="played-at-meta">25.04.2026</span>
                             <span class="played-at-name">SATURDAY &amp; BASS</span>
-                            <span class="played-at-location">Outback Wolkersdorf</span>
+                            <span class="played-at-location">Outback Wolkersdorf <span class="played-at-card-date">&bull; 25.04.2026</span></span>
                             <svg class="played-at-arrow" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -137,7 +137,7 @@
                         <a class="played-at-card" href="shows.html#inferno-show" data-event="4">
                             <span class="played-at-meta">20.09.2025</span>
                             <span class="played-at-name">INFERNO</span>
-                            <span class="played-at-location">Matzen</span>
+                            <span class="played-at-location">Matzen <span class="played-at-card-date">&bull; 20.09.2025</span></span>
                             <svg class="played-at-arrow" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -305,7 +305,7 @@
             }
         }
 
-        if (homeHero && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        if (homeHero && window.innerWidth > 900 && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
             homeHero.addEventListener('mousemove', function (e) {
                 const rect = homeHero.getBoundingClientRect();
                 heroTargetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
