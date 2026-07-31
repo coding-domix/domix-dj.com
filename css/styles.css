@@ -986,9 +986,13 @@ html.page-loading body::after {
     text-transform: uppercase;
 }
 
-.about-info span {
+.about-info-separator {
     color: rgba(255, 212, 59, 0.55);
     margin: 0 0.65rem;
+}
+
+.played-at-button--mobile {
+    display: none;
 }
 
 .about-link {
@@ -1569,6 +1573,10 @@ html.page-loading body::after {
     font-size: 0.66rem;
     font-weight: 800;
     letter-spacing: 0.12em;
+}
+
+.site-footer-mobile-copyright {
+    display: none;
 }
 
 .site-footer-partner {
@@ -6049,6 +6057,19 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
         width: clamp(112px, 31vw, 148px);
     }
 
+    .brand::after {
+        content: "";
+        position: fixed;
+        top: -2.5rem;
+        left: -2.5rem;
+        z-index: -1;
+        width: 230px;
+        height: 145px;
+        background: radial-gradient(ellipse at 34% 28%, rgba(0, 0, 0, 0.88) 0%, rgba(1, 5, 15, 0.58) 44%, rgba(2, 8, 23, 0) 78%);
+        filter: blur(8px);
+        pointer-events: none;
+    }
+
     .desktop-hero-nav,
     .subpage-hero .desktop-hero-nav,
     .music-hero .desktop-hero-nav {
@@ -6630,5 +6651,401 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
     .mobile-nav-panel,
     .mobile-nav-links a {
         transition: none;
+    }
+}
+
+/* Mobile footer: compact centered navigation, socials and partner information */
+@media (max-width: 900px) {
+    .site-footer {
+        gap: 0.1rem;
+        padding: 1.25rem 1rem 1.4rem;
+        text-align: center;
+    }
+
+    .site-footer-main {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0.45rem;
+    }
+
+    .site-footer-logo {
+        display: none;
+    }
+
+    .site-footer-nav {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        gap: clamp(0.65rem, 3.2vw, 1.35rem);
+    }
+
+    .site-footer-nav a {
+        flex: 0 0 auto;
+        justify-content: center;
+        font-size: clamp(0.58rem, 2.1vw, 0.72rem);
+        letter-spacing: clamp(0.09em, 0.38vw, 0.18em);
+    }
+
+    .site-footer-main > p {
+        display: none;
+    }
+
+    .site-footer-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .site-footer-socials {
+        display: inline-flex;
+        order: 1;
+        margin-bottom: 0.7rem;
+        justify-self: auto;
+    }
+
+    .site-footer-partner {
+        display: none;
+    }
+
+    .site-footer-partner span[aria-hidden="true"] {
+        display: inline;
+    }
+
+    .site-footer-partner a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 22px;
+    }
+
+    .site-footer-partner img {
+        height: 22px;
+    }
+
+    .site-footer-mobile-copyright {
+        display: block;
+        order: 2;
+        margin: 0;
+        color: rgba(255, 246, 249, 0.5);
+        font-size: 0.62rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+    }
+
+    .site-footer-meta > p:not(.site-footer-mobile-copyright) {
+        display: none;
+    }
+}
+
+@media (max-width: 359px) {
+    .site-footer-nav {
+        gap: 0.52rem;
+    }
+
+    .site-footer-nav a {
+        font-size: 0.55rem;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* Mobile home hero branding alignment */
+@media (max-width: 900px) {
+    .home-hero {
+        min-height: 100svh;
+    }
+
+    .home-hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: clamp(120px, 17svh, 155px);
+        text-align: center;
+        isolation: isolate;
+    }
+
+    .home-hero-copy::before {
+        content: "";
+        position: absolute;
+        inset: -5rem -3.2rem -2.8rem;
+        z-index: -1;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.84) 0%, rgba(1, 5, 15, 0.67) 42%, rgba(2, 8, 23, 0) 76%);
+        filter: blur(12px);
+        pointer-events: none;
+        transform: translateY(-1.25rem);
+    }
+
+    .home-hero-wordmark-wrap {
+        margin: -0.75rem auto;
+    }
+
+    .home-hero-subline {
+        margin-top: 0.42rem;
+    }
+
+    .domix-equipment {
+        height: clamp(220px, 36svh, 320px);
+    }
+
+    .home-hero-bg-wordmark {
+        top: calc(100% - 140px - clamp(110px, 18svh, 160px));
+    }
+
+    .home-hero-genres,
+    .home-hero-socials {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-hero-genres {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.35rem 0.7rem;
+        margin-top: clamp(1.15rem, 2.3vw, 1.4rem);
+    }
+
+    .home-hero-genres span {
+        white-space: nowrap;
+    }
+
+    .home-hero-genres span:nth-child(3) {
+        flex-basis: 100%;
+    }
+
+    .home-hero-socials a {
+        width: 42px;
+        height: 42px;
+    }
+
+    .home-hero-socials {
+        margin-top: clamp(0.95rem, 2vw, 1.15rem);
+    }
+
+    .home-hero-bottom {
+        bottom: max(1.25rem, env(safe-area-inset-bottom));
+    }
+}
+
+@media (max-width: 620px) {
+    .home-hero-bg-wordmark {
+        top: calc(100% - 116px - clamp(110px, 18svh, 160px));
+    }
+}
+
+/* Centered mobile home section introductions */
+@media (max-width: 900px) {
+    .played-at-header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .played-at-heading {
+        display: grid;
+        justify-items: center;
+    }
+
+    .played-at-heading p {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .played-at-button {
+        align-self: center;
+    }
+
+    .about-inner {
+        justify-items: center;
+    }
+
+    .about-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-copy h2,
+    .about-text,
+    .about-text p,
+    .about-info {
+        text-align: center;
+    }
+}
+
+/* Mobile inline navigation */
+@media (max-width: 900px) {
+    .brand,
+    .mobile-nav-toggle,
+    .mobile-nav-drawer {
+        display: none;
+    }
+
+    .desktop-hero-nav,
+    .subpage-hero .desktop-hero-nav,
+    .music-hero .desktop-hero-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10003;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+        min-height: 56px;
+        margin: 0;
+        padding: 0.38rem 0.5rem 0.15rem;
+        gap: clamp(0.55rem, 2.4vw, 1.05rem);
+        transform: none;
+    }
+
+    .desktop-hero-nav::before,
+    .subpage-hero .desktop-hero-nav::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 88px;
+        background: linear-gradient(180deg, rgba(1, 5, 15, 0.9) 0%, rgba(2, 8, 23, 0.54) 48%, rgba(2, 8, 23, 0) 100%);
+        pointer-events: none;
+        transform: none;
+    }
+
+    .desktop-hero-nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        color: rgba(255, 246, 249, 0.86);
+        font-size: 0.74rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+    }
+
+    .desktop-hero-nav a::after {
+        bottom: 0.65rem;
+        width: 100%;
+        height: 2px;
+        transform-origin: center;
+    }
+
+    .desktop-hero-nav a[aria-current="page"] {
+        color: var(--domix-yellow);
+    }
+
+    .desktop-hero-nav a[aria-current="page"]::after {
+        transform: scaleX(1);
+    }
+
+    .home-hero-copy {
+        top: clamp(95px, 13svh, 120px);
+    }
+
+    .domix-equipment-wrapper {
+        padding-bottom: clamp(13.75rem, 28.3svh, 15.75rem);
+    }
+
+    .domix-equipment {
+        -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 88%, transparent 100%);
+        mask-image: linear-gradient(to bottom, #000 0%, #000 88%, transparent 100%);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+        filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
+    }
+
+    .home-hero-bg-wordmark {
+        top: calc(100% - clamp(13.75rem, 28.3svh, 15.75rem) - clamp(110px, 18svh, 160px));
+    }
+
+    .home-hero-bottom {
+        right: auto;
+        left: 50%;
+        bottom: max(1.25rem, env(safe-area-inset-bottom));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(calc(100% - 2rem), 300px);
+        transform: translateX(-50%);
+    }
+
+    .home-hero-stat,
+    .home-hero-listen,
+    .home-hero-book {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-hero-stat {
+        grid-column: 1 / -1;
+    }
+
+    .home-hero-listen,
+    .home-hero-book {
+        grid-column: auto;
+    }
+
+    .home-hero-genres {
+        display: none;
+    }
+
+    .played-at-button--header {
+        display: none;
+    }
+
+    .played-at-button--mobile {
+        display: flex;
+        width: fit-content;
+        margin: 1.35rem auto 0;
+    }
+
+    .played-at-section {
+        padding-bottom: 3.5rem;
+    }
+
+    .about-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .about-info-separator--before-since {
+        display: none;
+    }
+
+    .about-info-item--since {
+        display: none;
+    }
+
+    .listen-book-section {
+        border-top: 0;
+    }
+
+    .booking-action {
+        margin-top: 1.15rem;
+    }
+
+    .listen-book-card-cta .booking-list {
+        align-self: start;
+        margin-top: 1.1rem;
+    }
+
+    .subpage-hero:not(.shows-hero) {
+        padding-top: 78px;
+    }
+}
+
+@media (max-width: 620px) {
+    .played-at-section {
+        padding-top: 5rem;
     }
 }
