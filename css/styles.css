@@ -2635,14 +2635,18 @@ html.page-loading body::after {
 }
 
 .recent-show-gallery-link:hover,
-.recent-show-gallery-link:focus {
+.recent-show-gallery-link:focus,
+.recent-show:has(.recent-show-image:hover) .recent-show-gallery-link,
+.recent-show:has(.recent-show-image:focus-within) .recent-show-gallery-link {
     color: #ffe35a;
     filter: drop-shadow(0 0 12px rgba(255, 212, 59, 0.28));
     outline: none;
 }
 
 .recent-show-gallery-link:hover::after,
-.recent-show-gallery-link:focus::after {
+.recent-show-gallery-link:focus::after,
+.recent-show:has(.recent-show-image:hover) .recent-show-gallery-link::after,
+.recent-show:has(.recent-show-image:focus-within) .recent-show-gallery-link::after {
     transform: scaleX(1);
 }
 

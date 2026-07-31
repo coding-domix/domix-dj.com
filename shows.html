@@ -9,9 +9,13 @@
     <title>Shows - DOMIX</title>
     <link rel="preload" href="images/domix/events/FlashOver%202026/FlashOver_1-8.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/site.js" defer></script>
+    <script>
+        document.documentElement.classList.add("page-loading");
+    </script>
 </head>
 
-<body class="subpage-body">
+<body class="subpage-body" data-page-loader="true">
     <main class="subpage-main">
         <header class="hero subpage-hero shows-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></a>
@@ -30,7 +34,6 @@
                     <img class="subpage-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 88vw, 720px" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
                     <h1 class="subpage-title">Shows</h1>
                 </div>
-                <p class="subpage-description">From local stages to festival crowds</p>
             </div>
         </header>
 
@@ -42,9 +45,9 @@
                 <div class="shows-list" aria-label="Upcoming shows">
                     <article class="show-card">
                         <time datetime="2026-08-01">01 AUG 2026</time>
-                        <h3>TBA</h3>
-                        <p>TBA</p>
-                        <button class="show-card-action" type="button" disabled>Soon</button>
+                        <h3>DIVINE</h3>
+                        <p>PROTTES</p>
+                        <a class="show-card-action" href="https://www.instagram.com/divine_prottes/" target="_blank" rel="noopener noreferrer">INFO</a>
                     </article>
                     
                     <article class="show-card" id="marchfelder-bank-show">
@@ -359,10 +362,12 @@
         const lightboxNext = lightbox.querySelector('.show-lightbox-next');
         let activeGallery = null;
         let activeImageIndex = 0;
-        const preloadedShowImages = new Map();
+        const preloadedShowImages = window.DOMIX_PRELOADED_IMAGES = window.DOMIX_PRELOADED_IMAGES || new Map();
 
         function preloadShowImage(src) {
             if (preloadedShowImages.has(src)) return preloadedShowImages.get(src);
+            const absoluteSrc = new URL(src, document.baseURI).href;
+            if (preloadedShowImages.has(absoluteSrc)) return preloadedShowImages.get(absoluteSrc);
 
             const image = new Image();
             image.decoding = 'async';
@@ -372,6 +377,7 @@
             });
             image.src = src;
             preloadedShowImages.set(src, image);
+            preloadedShowImages.set(absoluteSrc, image);
             if (image.decode) image.decode().catch(function () {});
             return image;
         }

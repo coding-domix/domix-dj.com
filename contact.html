@@ -10,9 +10,12 @@
     <link rel="preload" href="images/domix/events/FlashOver%202026/FlashOver_1-2.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/site.js" defer></script>
+    <script>
+        document.documentElement.classList.add("page-loading");
+    </script>
 </head>
 
-<body class="subpage-body contact-page" data-reveal-selector=".reveal-on-scroll" data-reveal-threshold="0.12">
+<body class="subpage-body contact-page" data-reveal-selector=".reveal-on-scroll" data-reveal-threshold="0.12" data-reveal-on-load="true" data-page-loader="true">
     <main class="subpage-main">
         <header class="hero subpage-hero shows-hero contact-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="DOMIX" width="2000" height="600" decoding="async"></a>
@@ -26,12 +29,11 @@
             </nav>
 
             <div class="subpage-headline-wrap">
-                <p class="subpage-eyebrow">BOOKINGS &amp; INQUIRIES</p>
+                <p class="subpage-eyebrow">BOOKINGS</p>
                 <div class="shows-hero-title-wrap">
                     <img class="subpage-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 88vw, 720px" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
                     <h1 class="subpage-title">CONTACT</h1>
                 </div>
-                <p class="subpage-description">Professional DJ bookings for clubs, festivals and selected events.</p>
             </div>
         </header>
 

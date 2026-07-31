@@ -9,9 +9,13 @@
     <title>Music - DOMIX</title>
     <link rel="preload" href="images/domix/hero/stage-main.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/site.js" defer></script>
+    <script>
+        document.documentElement.classList.add("page-loading");
+    </script>
 </head>
 
-<body class="subpage-body">
+<body class="subpage-body" data-page-loader="true">
     <main class="subpage-main">
         <header class="hero subpage-hero shows-hero music-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></a>
@@ -30,7 +34,6 @@
                     <img class="subpage-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 88vw, 720px" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
                     <h1 class="subpage-title">Music</h1>
                 </div>
-                <p class="subpage-description">Remixes, DJ-Sets &amp; Playlists</p>
             </div>
         </header>
 
