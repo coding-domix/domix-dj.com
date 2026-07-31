@@ -7,6 +7,7 @@
 
     function unlockPage() {
         document.documentElement.classList.remove('page-loading');
+        document.documentElement.classList.remove('page-loader-pending');
     }
 
     function initializeRevealSections() {
@@ -134,9 +135,9 @@
         return waitForDomImage(image, status);
     }
 
-    function preloadHeaderImages() {
+    function createHeaderPreloadContext() {
         var header = document.querySelector('header');
-        if (!header) return Promise.resolve();
+        if (!header) return null;
 
         var domImages = prepareHeaderImages(header);
         var urls = collectHeaderImageUrls(header, domImages);
@@ -146,20 +147,51 @@
         var headerAssetUrls = Array.from(urls).filter(function (url) {
             return !domUrls.has(url);
         });
+        return {
+            domImages: domImages,
+            urls: Array.from(urls),
+            headerAssetUrls: headerAssetUrls
+        };
+    }
+
+    function isImageCached(url) {
+        return fetch(url, {
+            cache: 'only-if-cached',
+            mode: 'same-origin'
+        }).then(function (response) {
+            return response.ok;
+        }).catch(function () {
+            return false;
+        });
+    }
+
+    function areHeaderImagesCached(context) {
+        if (!context || !context.urls.length) return Promise.resolve(true);
+
+        return Promise.all(context.urls.map(isImageCached)).then(function (results) {
+            return results.every(Boolean);
+        });
+    }
+
+    function preloadHeaderImages(context, cacheHit) {
+        if (!context) return Promise.resolve();
+
         var status = window.DOMIX_HEADER_PRELOAD_STATUS = {
             complete: false,
-            total: domImages.length + headerAssetUrls.length,
+            cacheHit: cacheHit,
+            total: context.domImages.length + context.headerAssetUrls.length,
             loaded: 0,
             failed: 0,
-            urls: Array.from(urls)
+            urls: context.urls
         };
         document.documentElement.dataset.preloadState = 'loading';
         document.documentElement.dataset.preloadTotal = String(status.total);
         document.documentElement.dataset.preloadLoaded = '0';
         document.documentElement.dataset.preloadFailed = '0';
-        var imagePromises = domImages.map(function (image) {
+        document.documentElement.dataset.preloadCacheHit = String(cacheHit);
+        var imagePromises = context.domImages.map(function (image) {
             return waitForDomImage(image, status);
-        }).concat(headerAssetUrls.map(function (url) {
+        }).concat(context.headerAssetUrls.map(function (url) {
             return preloadImageUrl(url, status);
         }));
         var fontPromise = document.fonts ? document.fonts.ready.catch(function () {}) : Promise.resolve();
@@ -182,32 +214,20 @@
 
         if (!shouldUnlockPage) return;
 
-        preloadHeaderImages().then(revealLoadedPage);
-    }
-
-    function isInternalPageNavigation(link, event) {
-        if (!link || link.target || link.hasAttribute('download')) return false;
-        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return false;
-
-        var destination = new URL(link.href, document.baseURI);
-        if (destination.origin !== window.location.origin) return false;
-        if (!/(?:\/|\.html)$/i.test(destination.pathname)) return false;
-
-        var currentPage = window.location.origin + window.location.pathname + window.location.search;
-        var destinationPage = destination.origin + destination.pathname + destination.search;
-        return destinationPage !== currentPage;
-    }
-
-    document.addEventListener('click', function (event) {
-        var link = event.target.closest('a[href]');
-        if (!isInternalPageNavigation(link, event)) return;
-
-        event.preventDefault();
-        document.documentElement.classList.add('page-loading');
-        window.requestAnimationFrame(function () {
-            window.location.href = link.href;
+        var context = createHeaderPreloadContext();
+        areHeaderImagesCached(context).then(function (cacheHit) {
+            if (!cacheHit) {
+                document.documentElement.classList.add('page-loading');
+                document.documentElement.dataset.preloadLoaderShown = 'true';
+                document.documentElement.classList.remove('page-loader-pending');
+            } else {
+                document.documentElement.dataset.preloadLoaderShown = 'false';
+            }
+            return preloadHeaderImages(context, cacheHit);
+        }).then(function () {
+            revealLoadedPage();
         });
-    });
+    }
 
     window.addEventListener('pageshow', function (event) {
         if (event.persisted && window.DOMIX_HEADER_PRELOAD_STATUS && window.DOMIX_HEADER_PRELOAD_STATUS.complete) {

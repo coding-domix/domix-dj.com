@@ -35,11 +35,14 @@ body {
 }
 
 html.page-loading,
-html.page-loading body {
+html.page-loading body,
+html.page-loader-pending,
+html.page-loader-pending body {
     overflow: hidden;
 }
 
-html.page-loading body > * {
+html.page-loading body > *,
+html.page-loader-pending body > * {
     visibility: hidden;
 }
 

@@ -35,12 +35,15 @@ body.lightbox-open {
 }
 
 html.page-loading,
-html.page-loading body {
+html.page-loading body,
+html.page-loader-pending,
+html.page-loader-pending body {
     overflow: hidden;
     background: radial-gradient(circle at 25% 20%, rgba(123, 77, 255, 0.2), transparent 45%), var(--domix-blue-deep);
 }
 
-html.page-loading body > * {
+html.page-loading body > *,
+html.page-loader-pending body > * {
     visibility: hidden;
 }
 
