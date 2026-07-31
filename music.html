@@ -20,26 +20,6 @@
         <header class="hero subpage-hero shows-hero music-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></a>
 
-            <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-menu" aria-label="Open navigation">
-                <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="mobile-nav-toggle-label" aria-hidden="true">MENU</span>
-            </button>
-            <div class="mobile-nav-drawer" id="mobile-site-menu" aria-hidden="true">
-                <button class="mobile-nav-backdrop" type="button" data-nav-close tabindex="-1" aria-label="Close navigation"></button>
-                <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
-                    <div class="mobile-nav-panel-brand" aria-hidden="true">DOMIX</div>
-                    <p class="mobile-nav-kicker">DJ &amp; PRODUCER</p>
-                    <nav class="mobile-nav-links" aria-label="Mobile navigation">
-                        <a href="index.html"><span>01</span>HOME</a>
-                        <a href="shows.html"><span>02</span>SHOWS</a>
-                        <a href="music.html" aria-current="page"><span>03</span>MUSIC</a>
-                        <a href="about.html"><span>04</span>ABOUT</a>
-                        <a href="contact.html"><span>05</span>CONTACT</a>
-                    </nav>
-                    <p class="mobile-nav-meta">AUSTRIA <span aria-hidden="true">&middot;</span> EST. 2024</p>
-                </div>
-            </div>
-
             <nav class="desktop-hero-nav" aria-label="Primary navigation">
                 <a href="index.html">HOME</a>
                 <a href="shows.html">SHOWS</a>
@@ -364,11 +344,13 @@
         const featuredReleaseSection = document.querySelector('.music-featured-section');
         const featuredReleaseContainer = document.getElementById('featured-release');
         const remixesGrid = document.getElementById('remixes-grid');
+        const remixesSection = remixesGrid.closest('.music-grid-section');
         const playlistsGrid = document.getElementById('playlists-grid');
         const setsList = document.getElementById('sets-list');
         const musicSearch = document.getElementById('music-search');
         const remixesToggle = document.getElementById('remixes-toggle');
         const remixesToggleWrap = document.getElementById('remixes-toggle-wrap');
+        const mobileMusicQuery = window.matchMedia('(max-width: 900px)');
         const featuredPreviewAudio = new Audio();
         const remixPreviewAudio = new Audio();
         let featuredLayoutFrame = 0;
@@ -376,8 +358,14 @@
         let featuredContentObserver = null;
         let activeRemixPreviewId = null;
         let showAllRemixes = false;
-        featuredPreviewAudio.preload = 'metadata';
+        featuredPreviewAudio.preload = 'none';
         remixPreviewAudio.preload = 'none';
+
+        function releaseAudioSource(audio) {
+            if (!audio.getAttribute('src')) return;
+            audio.removeAttribute('src');
+            audio.load();
+        }
 
         function clearFeaturedCoverSync() {
             if (featuredContentObserver) featuredContentObserver.disconnect();
@@ -501,7 +489,8 @@
         function playRemixPreview(release) {
             if (!release.previewUrl) return;
 
-            pauseFeaturedPreview(false);
+            pauseFeaturedPreview(mobileMusicQuery.matches);
+            if (mobileMusicQuery.matches) releaseAudioSource(featuredPreviewAudio);
             const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
             if (remixPreviewAudio.src !== absoluteUrl) {
                 remixPreviewAudio.src = absoluteUrl;
@@ -633,7 +622,8 @@
         function playFeaturedPreview(url) {
             if (!url) return;
 
-            pauseRemixPreview(false);
+            pauseRemixPreview(mobileMusicQuery.matches);
+            if (mobileMusicQuery.matches) releaseAudioSource(remixPreviewAudio);
             const absoluteUrl = new URL(url, document.baseURI).href;
             if (featuredPreviewAudio.src !== absoluteUrl) {
                 featuredPreviewAudio.src = absoluteUrl;
@@ -916,9 +906,20 @@
             const featuredReleaseObserver = new IntersectionObserver(function (entries) {
                 if (!entries[0].isIntersecting) {
                     pauseFeaturedPreview(true);
+                    if (mobileMusicQuery.matches) releaseAudioSource(featuredPreviewAudio);
                 }
-            }, { threshold: 0.05 });
+            }, { rootMargin: '160px 0px', threshold: 0 });
             featuredReleaseObserver.observe(featuredReleaseSection);
+        }
+
+        if (mobileMusicQuery.matches && remixesSection && 'IntersectionObserver' in window) {
+            const remixesObserver = new IntersectionObserver(function (entries) {
+                if (!entries[0].isIntersecting) {
+                    pauseRemixPreview(true);
+                    releaseAudioSource(remixPreviewAudio);
+                }
+            }, { rootMargin: '160px 0px', threshold: 0 });
+            remixesObserver.observe(remixesSection);
         }
 
         musicSearch.addEventListener('input', renderMusicPage);

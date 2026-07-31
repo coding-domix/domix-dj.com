@@ -20,26 +20,6 @@
         <header class="hero subpage-hero shows-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></a>
 
-            <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-menu" aria-label="Open navigation">
-                <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="mobile-nav-toggle-label" aria-hidden="true">MENU</span>
-            </button>
-            <div class="mobile-nav-drawer" id="mobile-site-menu" aria-hidden="true">
-                <button class="mobile-nav-backdrop" type="button" data-nav-close tabindex="-1" aria-label="Close navigation"></button>
-                <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
-                    <div class="mobile-nav-panel-brand" aria-hidden="true">DOMIX</div>
-                    <p class="mobile-nav-kicker">DJ &amp; PRODUCER</p>
-                    <nav class="mobile-nav-links" aria-label="Mobile navigation">
-                        <a href="index.html"><span>01</span>HOME</a>
-                        <a href="shows.html" aria-current="page"><span>02</span>SHOWS</a>
-                        <a href="music.html"><span>03</span>MUSIC</a>
-                        <a href="about.html"><span>04</span>ABOUT</a>
-                        <a href="contact.html"><span>05</span>CONTACT</a>
-                    </nav>
-                    <p class="mobile-nav-meta">AUSTRIA <span aria-hidden="true">&middot;</span> EST. 2024</p>
-                </div>
-            </div>
-
             <nav class="desktop-hero-nav" aria-label="Primary navigation">
                 <a href="index.html">HOME</a>
                 <a href="shows.html" aria-current="page">SHOWS</a>
@@ -210,7 +190,7 @@
             <button class="show-lightbox-close" type="button" aria-label="Close gallery"></button>
             <button class="show-lightbox-nav show-lightbox-prev" type="button" aria-label="Previous image"></button>
             <div class="show-lightbox-stage">
-                <img class="show-lightbox-image" src="" alt="" width="3" height="2" sizes="min(1040px, 88vw)" decoding="async">
+                <img class="show-lightbox-image" src="" alt="" width="3" height="2" sizes="min(1040px, 88vw)" decoding="async" fetchpriority="high">
                 <div class="show-lightbox-preview-stack" aria-label="Upcoming gallery images"></div>
             </div>
             <button class="show-lightbox-nav show-lightbox-next" type="button" aria-label="Next image"></button>
@@ -401,26 +381,6 @@
         let lastLightboxTrigger = null;
         let lightboxTouchStartX = 0;
         let lightboxTouchStartY = 0;
-        const preloadedShowImages = window.DOMIX_PRELOADED_IMAGES = window.DOMIX_PRELOADED_IMAGES || new Map();
-
-        function preloadShowImage(src) {
-            if (preloadedShowImages.has(src)) return preloadedShowImages.get(src);
-            const absoluteSrc = new URL(src, document.baseURI).href;
-            if (preloadedShowImages.has(absoluteSrc)) return preloadedShowImages.get(absoluteSrc);
-
-            const image = new Image();
-            image.decoding = 'async';
-            image.addEventListener('load', function () {
-                if (!activeGallery || lightbox.hidden || activeGallery.images[activeImageIndex] !== src) return;
-                updatePreviewMetrics(Math.min(3, activeGallery.images.length - 1), getImageRatio(src));
-            });
-            image.src = src;
-            preloadedShowImages.set(src, image);
-            preloadedShowImages.set(absoluteSrc, image);
-            if (image.decode) image.decode().catch(function () {});
-            return image;
-        }
-
         const topCroppedPreviewImages = [
             'Outback_1-01.webp'
         ];
@@ -444,11 +404,6 @@
         function getImageRatio(src) {
             const dimensions = showImageDimensions.get(src);
             if (dimensions) return dimensions[0] / dimensions[1];
-
-            const image = preloadShowImage(src);
-            if (image.naturalWidth && image.naturalHeight) {
-                return image.naturalWidth / image.naturalHeight;
-            }
             return 3 / 2;
         }
 
@@ -485,7 +440,6 @@
             const total = activeGallery.images.length;
             const activeImageSrc = activeGallery.images[activeImageIndex];
             const activeImageDimensions = showImageDimensions.get(activeImageSrc);
-            preloadShowImage(activeImageSrc);
             const activeImageRatio = getImageRatio(activeImageSrc);
             lightbox.classList.toggle('has-portrait-focus', activeImageRatio < 1);
             if (activeImageDimensions) {
@@ -502,10 +456,6 @@
             lightboxNext.disabled = total < 2;
             lightboxVerticalPrev.disabled = total < 2;
             lightboxVerticalNext.disabled = total < 2;
-            if (total > 1) {
-                preloadShowImage(activeGallery.images[(activeImageIndex + 1) % total]);
-                preloadShowImage(activeGallery.images[(activeImageIndex - 1 + total) % total]);
-            }
             const isMobileGallery = window.matchMedia('(max-width: 900px)').matches;
             const previewIndexes = total > 1
                 ? (isMobileGallery
@@ -521,8 +471,7 @@
                 const topCropClass = shouldCropPreviewFromTop(previewSrc) ? ' show-lightbox-preview-top' : '';
                 const upperCropClass = shouldCropPreviewFromUpper(previewSrc) ? ' show-lightbox-preview-upper' : '';
                 const directionClass = isMobileGallery ? (previewOffset === 0 ? ' show-lightbox-preview-previous' : ' show-lightbox-preview-next') : '';
-                preloadShowImage(previewSrc);
-                return `<button class="show-lightbox-preview${directionClass}${topCropClass}${upperCropClass}" type="button" data-index="${previewIndex}" aria-label="Show image ${previewIndex + 1} of ${total}"><img src="${previewSrc}" srcset="${previewSrc} ${previewDimensions[0]}w" sizes="180px" alt="" width="${previewDimensions[0]}" height="${previewDimensions[1]}" decoding="async"></button>`;
+                return `<button class="show-lightbox-preview${directionClass}${topCropClass}${upperCropClass}" type="button" data-index="${previewIndex}" aria-label="Show image ${previewIndex + 1} of ${total}"><img src="${previewSrc}" srcset="${previewSrc} ${previewDimensions[0]}w" sizes="180px" alt="" width="${previewDimensions[0]}" height="${previewDimensions[1]}" loading="lazy" decoding="async" fetchpriority="low"></button>`;
             }).join('');
             updatePreviewMetrics(previewCount, activeImageRatio);
             lightboxDots.innerHTML = activeGallery.images.map(function (_, index) {
@@ -617,39 +566,81 @@
         });
 
         const activeShowCards = Array.from(document.querySelectorAll('.recent-show'));
-        let activeShowCardFrame;
+        let focusedShowCard = null;
+        let queueActiveShowCardUpdate = function () {};
 
-        function updateActiveShowCard() {
-            activeShowCardFrame = undefined;
-            const viewportCenter = window.innerHeight / 2;
-            let focusedCard = null;
-            let shortestDistance = Infinity;
-
-            activeShowCards.forEach(function (showCard) {
-                if (showCard.hidden) return;
-                const bounds = showCard.getBoundingClientRect();
-                if (bounds.bottom <= 0 || bounds.top >= window.innerHeight) return;
-                const distance = Math.abs(((bounds.top + bounds.bottom) / 2) - viewportCenter);
-                if (distance < shortestDistance) {
-                    focusedCard = showCard;
-                    shortestDistance = distance;
-                }
-            });
-
-            activeShowCards.forEach(function (showCard) {
-                showCard.classList.toggle('is-interaction-active', showCard === focusedCard);
-            });
+        function setFocusedShowCard(showCard) {
+            if (focusedShowCard === showCard) return;
+            if (focusedShowCard) focusedShowCard.classList.remove('is-interaction-active');
+            focusedShowCard = showCard;
+            if (focusedShowCard) focusedShowCard.classList.add('is-interaction-active');
         }
 
-        function queueActiveShowCardUpdate() {
-            if (activeShowCardFrame) return;
-            activeShowCardFrame = window.requestAnimationFrame(updateActiveShowCard);
-        }
+        if ('IntersectionObserver' in window) {
+            const centeredShowCards = new Set();
+            const showCardFocusObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting && !entry.target.hidden) {
+                        centeredShowCards.add(entry.target);
+                    } else {
+                        centeredShowCards.delete(entry.target);
+                    }
+                });
 
-        window.addEventListener('scroll', queueActiveShowCardUpdate, { passive: true });
-        window.addEventListener('resize', queueActiveShowCardUpdate);
-        window.addEventListener('load', queueActiveShowCardUpdate);
-        queueActiveShowCardUpdate();
+                let closestCard = null;
+                let closestDistance = Infinity;
+                const viewportCenter = window.innerHeight / 2;
+                centeredShowCards.forEach(function (showCard) {
+                    if (showCard.hidden) return;
+                    const bounds = showCard.getBoundingClientRect();
+                    const distance = Math.abs(((bounds.top + bounds.bottom) / 2) - viewportCenter);
+                    if (distance < closestDistance) {
+                        closestCard = showCard;
+                        closestDistance = distance;
+                    }
+                });
+                setFocusedShowCard(closestCard);
+            }, { rootMargin: '-49% 0px -49% 0px', threshold: 0 });
+
+            activeShowCards.forEach(function (showCard) {
+                showCardFocusObserver.observe(showCard);
+            });
+
+            queueActiveShowCardUpdate = function () {
+                window.requestAnimationFrame(function () {
+                    if (focusedShowCard && focusedShowCard.hidden) setFocusedShowCard(null);
+                });
+            };
+        } else {
+            let activeShowCardFrame;
+            function updateActiveShowCard() {
+                activeShowCardFrame = undefined;
+                const viewportCenter = window.innerHeight / 2;
+                let closestCard = null;
+                let closestDistance = Infinity;
+
+                activeShowCards.forEach(function (showCard) {
+                    if (showCard.hidden) return;
+                    const bounds = showCard.getBoundingClientRect();
+                    if (bounds.bottom <= 0 || bounds.top >= window.innerHeight) return;
+                    const distance = Math.abs(((bounds.top + bounds.bottom) / 2) - viewportCenter);
+                    if (distance < closestDistance) {
+                        closestCard = showCard;
+                        closestDistance = distance;
+                    }
+                });
+                setFocusedShowCard(closestCard);
+            }
+
+            queueActiveShowCardUpdate = function () {
+                if (activeShowCardFrame) return;
+                activeShowCardFrame = window.requestAnimationFrame(updateActiveShowCard);
+            };
+            window.addEventListener('scroll', queueActiveShowCardUpdate, { passive: true });
+            window.addEventListener('resize', queueActiveShowCardUpdate);
+            window.addEventListener('load', queueActiveShowCardUpdate);
+            queueActiveShowCardUpdate();
+        }
 
         document.querySelectorAll('.show-card-action[href]').forEach(function (link) {
             link.addEventListener('click', function () {
