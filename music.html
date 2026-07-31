@@ -20,6 +20,26 @@
         <header class="hero subpage-hero shows-hero music-hero">
             <a class="brand" href="index.html" aria-label="DOMIX Home"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></a>
 
+            <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-menu" aria-label="Open navigation">
+                <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="mobile-nav-toggle-label" aria-hidden="true">MENU</span>
+            </button>
+            <div class="mobile-nav-drawer" id="mobile-site-menu" aria-hidden="true">
+                <button class="mobile-nav-backdrop" type="button" data-nav-close tabindex="-1" aria-label="Close navigation"></button>
+                <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+                    <div class="mobile-nav-panel-brand" aria-hidden="true">DOMIX</div>
+                    <p class="mobile-nav-kicker">DJ &amp; PRODUCER</p>
+                    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                        <a href="index.html"><span>01</span>HOME</a>
+                        <a href="shows.html"><span>02</span>SHOWS</a>
+                        <a href="music.html" aria-current="page"><span>03</span>MUSIC</a>
+                        <a href="about.html"><span>04</span>ABOUT</a>
+                        <a href="contact.html"><span>05</span>CONTACT</a>
+                    </nav>
+                    <p class="mobile-nav-meta">AUSTRIA <span aria-hidden="true">&middot;</span> EST. 2024</p>
+                </div>
+            </div>
+
             <nav class="desktop-hero-nav" aria-label="Primary navigation">
                 <a href="index.html">HOME</a>
                 <a href="shows.html">SHOWS</a>
@@ -61,7 +81,7 @@
 
                 <div class="music-card-grid" id="remixes-grid" aria-live="polite"></div>
                 <div class="music-remixes-toggle-wrap" id="remixes-toggle-wrap">
-                    <button class="music-remixes-toggle" id="remixes-toggle" type="button" aria-expanded="false">VIEW ALL REMIXES</button>
+                    <button class="music-remixes-toggle" id="remixes-toggle" type="button" aria-expanded="false" aria-controls="remixes-grid">VIEW ALL REMIXES</button>
                 </div>
             </div>
         </section>
@@ -94,8 +114,8 @@
                 <h2 id="music-follow-title">Stay Connected</h2>
                 <p>Follow DOMIX on SoundCloud and Spotify for new releases, mixes and DJ sets.</p>
                 <div class="music-follow-actions">
-                    <a class="music-action-button" href="#" data-placeholder-link>SOUNDCLOUD</a>
-                    <a class="music-action-button music-action-button-secondary" href="#" data-placeholder-link>SPOTIFY</a>
+                    <a class="music-action-button" href="#" data-placeholder-link aria-disabled="true" tabindex="-1">SOUNDCLOUD</a>
+                    <a class="music-action-button music-action-button-secondary" href="#" data-placeholder-link aria-disabled="true" tabindex="-1">SPOTIFY</a>
                 </div>
             </div>
         </section>
@@ -426,7 +446,9 @@
         }
 
         function placeholderLinkAttributes(url) {
-            return url === '#' ? ' data-placeholder-link' : ' target="_blank" rel="noopener noreferrer"';
+            return url === '#'
+                ? ' data-placeholder-link aria-disabled="true" tabindex="-1"'
+                : ' target="_blank" rel="noopener noreferrer"';
         }
 
         function renderEmpty(label) {
@@ -727,7 +749,7 @@
                     <div class="music-track-card-shell${release.soundcloudUrl !== '#' ? ' has-soundcloud' : ''}" data-remix-id="${release.id}" data-release-title="${release.title}">
                         <article class="music-track-card">
                             <button class="music-track-cover" type="button" data-remix-preview-toggle aria-label="Play preview of ${release.title}" aria-pressed="false">
-                                <img src="${release.cover}" srcset="${release.cover} ${dimensions[0]}w" sizes="(max-width: 900px) 100vw, 364px" alt="${release.title} cover" width="${dimensions[0]}" height="${dimensions[1]}" loading="lazy" decoding="async">
+                                <img src="${release.cover}" srcset="${release.cover} ${dimensions[0]}w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 50vw, 364px" alt="${release.title} cover" width="${dimensions[0]}" height="${dimensions[1]}" loading="lazy" decoding="async">
                                 <span class="music-play-icon" aria-hidden="true"></span>
                                 <span class="music-preview-progress" aria-hidden="true"><span></span></span>
                             </button>
@@ -760,7 +782,7 @@
                 return `
                     <a class="music-track-card music-playlist-card" href="${playlist.spotifyUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open ${playlist.title} on Spotify">
                         <span class="music-track-cover">
-                            <img src="${playlist.cover}" srcset="${playlist.cover} ${dimensions[0]}w" sizes="(max-width: 900px) 100vw, 364px" alt="${playlist.title} cover" width="${dimensions[0]}" height="${dimensions[1]}" loading="lazy" decoding="async">
+                            <img src="${playlist.cover}" srcset="${playlist.cover} ${dimensions[0]}w" sizes="(max-width: 620px) 100vw, (max-width: 900px) 50vw, 364px" alt="${playlist.title} cover" width="${dimensions[0]}" height="${dimensions[1]}" loading="lazy" decoding="async">
                         </span>
                         <span class="music-track-card-body">
                             <span class="music-track-category">Spotify Playlist</span>

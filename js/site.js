@@ -209,7 +209,90 @@
         });
     }
 
+    function initializeMobileNavigation() {
+        var toggle = document.querySelector('.mobile-nav-toggle');
+        var drawer = document.querySelector('.mobile-nav-drawer');
+        if (!toggle || !drawer) return;
+
+        var links = Array.from(drawer.querySelectorAll('.mobile-nav-links a'));
+        var backdrop = drawer.querySelector('[data-nav-close]');
+        var mobileQuery = window.matchMedia('(max-width: 900px)');
+        var isOpen = false;
+
+        function getFocusableElements() {
+            return [toggle].concat(links).filter(function (element) {
+                return !element.hasAttribute('disabled') && element.getAttribute('aria-hidden') !== 'true';
+            });
+        }
+
+        function setOpenState(open, restoreFocus) {
+            if (open && !mobileQuery.matches) return;
+            isOpen = open;
+            toggle.setAttribute('aria-expanded', String(open));
+            toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+            drawer.setAttribute('aria-hidden', String(!open));
+            body.classList.toggle('mobile-nav-open', open);
+
+            if (open) {
+                var activeLink = drawer.querySelector('[aria-current="page"]') || links[0];
+                window.requestAnimationFrame(function () {
+                    activeLink.focus();
+                });
+            } else if (restoreFocus) {
+                toggle.focus();
+            }
+        }
+
+        toggle.addEventListener('click', function () {
+            setOpenState(!isOpen, isOpen);
+        });
+
+        if (backdrop) {
+            backdrop.addEventListener('click', function () {
+                setOpenState(false, true);
+            });
+        }
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                setOpenState(false, false);
+            });
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (!isOpen) return;
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                setOpenState(false, true);
+                return;
+            }
+            if (event.key !== 'Tab') return;
+
+            var focusable = getFocusableElements();
+            var first = focusable[0];
+            var last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        });
+
+        function closeAtDesktop() {
+            if (!mobileQuery.matches && isOpen) setOpenState(false, false);
+        }
+
+        if (mobileQuery.addEventListener) {
+            mobileQuery.addEventListener('change', closeAtDesktop);
+        } else {
+            mobileQuery.addListener(closeAtDesktop);
+        }
+    }
+
     function initializePage() {
+        initializeMobileNavigation();
         initializeRevealSections();
 
         if (!shouldUnlockPage) return;

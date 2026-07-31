@@ -24,9 +24,29 @@
 
 <body data-reveal-selector=".reveal-on-scroll" data-reveal-threshold="0.18" data-reveal-on-load="true" data-page-loader="true">
     <header class="hero home-hero">
-        <img class="home-hero-bg-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="72vw" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
+        <img class="home-hero-bg-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 100vw, 72vw" alt="" aria-hidden="true" width="1920" height="576" decoding="async">
 
         <span class="brand" aria-label="DOMIX"><img src="images/domix/brand/domix_logo.svg" alt="Domix" width="2000" height="600" decoding="async"></span>
+
+        <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-menu" aria-label="Open navigation">
+            <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mobile-nav-toggle-label" aria-hidden="true">MENU</span>
+        </button>
+        <div class="mobile-nav-drawer" id="mobile-site-menu" aria-hidden="true">
+            <button class="mobile-nav-backdrop" type="button" data-nav-close tabindex="-1" aria-label="Close navigation"></button>
+            <div class="mobile-nav-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+                <div class="mobile-nav-panel-brand" aria-hidden="true">DOMIX</div>
+                <p class="mobile-nav-kicker">DJ &amp; PRODUCER</p>
+                <nav class="mobile-nav-links" aria-label="Mobile navigation">
+                    <a href="index.html" aria-current="page"><span>01</span>HOME</a>
+                    <a href="shows.html"><span>02</span>SHOWS</a>
+                    <a href="music.html"><span>03</span>MUSIC</a>
+                    <a href="about.html"><span>04</span>ABOUT</a>
+                    <a href="contact.html"><span>05</span>CONTACT</a>
+                </nav>
+                <p class="mobile-nav-meta">AUSTRIA <span aria-hidden="true">&middot;</span> EST. 2024</p>
+            </div>
+        </div>
 
         <div class="home-hero-copy">
             <h1 class="home-hero-wordmark-wrap">
@@ -75,7 +95,7 @@
 
     <main>
         <section class="played-at-section" id="played-at" aria-labelledby="played-at-title">
-            <img class="played-at-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
+            <img class="played-at-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 100vw, 72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="played-at-inner">
                 <div class="played-at-header">
                     <div class="played-at-heading">
@@ -135,7 +155,7 @@
                             <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp" srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp 1920w" sizes="(max-width: 1100px) 50vw, 34vw" alt="Saturday &amp; Bass Outback Wolkersdorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
                         </figure>
                         <figure class="played-at-image-card" data-event="4">
-                            <img src="images/domix/events/Inferno%202025/Inferno-1.jpg" alt="Inferno Matzen 2025" width="1802" height="1351" loading="lazy" decoding="async">
+                            <img src="images/domix/events/Inferno%202025/Inferno-1.jpg" srcset="images/domix/events/Inferno%202025/Inferno-1.jpg 1802w" sizes="(max-width: 1100px) 50vw, 34vw" alt="Inferno Matzen 2025" width="1802" height="1351" loading="lazy" decoding="async">
                         </figure>
                     </div>
                 </div>
@@ -143,7 +163,7 @@
         </section>
 
         <section class="about-section reveal-on-scroll" id="about" aria-labelledby="about-title">
-            <img class="about-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
+            <img class="about-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 100vw, 72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="about-inner">
                 <div class="about-copy">
                     <span class="about-kicker">ABOUT</span>
@@ -163,7 +183,7 @@
         </section>
 
         <section class="listen-book-section reveal-on-scroll" id="listen-book" aria-labelledby="listen-book-title">
-            <img class="listen-book-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
+            <img class="listen-book-wordmark" src="images/domix/brand/domix-outline.webp" srcset="images/domix/brand/domix-outline.webp 1920w" sizes="(max-width: 900px) 100vw, 72vw" alt="" aria-hidden="true" width="1920" height="576" loading="lazy" decoding="async">
             <div class="listen-book-inner">
                 <article class="listen-book-card listen-book-card-player">
                     <span class="listen-book-kicker">LISTEN</span>
