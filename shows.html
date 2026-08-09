@@ -44,13 +44,6 @@
                 <h2 id="upcoming-shows-title">Next Shows</h2>
 
                 <div class="shows-list" aria-label="Upcoming shows">
-                    <article class="show-card">
-                        <time datetime="2026-08-01">01 AUG 2026</time>
-                        <h3>DIVINE</h3>
-                        <p>PROTTES <span class="show-card-date">&bull; 01 AUG 2026</span></p>
-                        <a class="show-card-action" href="https://linktr.ee/divine_prottes" target="_blank" rel="noopener noreferrer">INFO</a>
-                    </article>
-                    
                     <article class="show-card" id="marchfelder-bank-show">
                         <time datetime="2026-09-03">03 SEP 2026</time>
                         <h3>Marchfelder Bank</h3>
@@ -60,7 +53,7 @@
 
                     <article class="show-card">
                         <time datetime="2026-09-11">11 SEP 2026</time>
-                        <h3>TBA</h3>
+                        <h3 class="show-card-title--nowrap">LANGE EINKAUFSNACHT</h3>
                         <p>Gänserndorf <span class="show-card-date">&bull; 11 SEP 2026</span></p>
                         <button class="show-card-action" type="button" disabled>Soon</button>
                     </article>
@@ -69,6 +62,13 @@
                         <time datetime="2026-09-13">13 SEP 2026</time>
                         <h3>TBA</h3>
                         <p>TBA <span class="show-card-date">&bull; 13 SEP 2026</span></p>
+                        <button class="show-card-action" type="button" disabled>Soon</button>
+                    </article>
+
+                    <article class="show-card">
+                        <time datetime="2026-10-03">03 OCT 2026</time>
+                        <h3>TBA</h3>
+                        <p>TBA <span class="show-card-date">&bull; 03 OCT 2026</span></p>
                         <button class="show-card-action" type="button" disabled>Soon</button>
                     </article>
 
@@ -98,7 +98,7 @@
                                 <p>Loidesthal <span aria-hidden="true">&bull;</span> 13.05.2026</p>
                             </div>
                             <p class="recent-show-text">FlashOver was my biggest show so far and my first time performing at a festival-style event. Opening the night with a Tech House set was an unforgettable experience that showed me exactly where I want to go next and confirmed my passion for performing on bigger stages.</p>
-                            <button class="recent-show-gallery-link" type="button" data-gallery="flashover">Bilder ansehen <span aria-hidden="true">&rarr;</span></button>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="flashover">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
                         </div>
                     </article>
 
@@ -117,12 +117,32 @@
                                 <h3>Holiday Kickoff</h3>
                                 <p>Obersdorf <span aria-hidden="true">&bull;</span> 03.07.2026</p>
                             </div>
-                            <p class="recent-show-text">Opening the night at Holiday Kickoff with a 90-minute Tech House set, I had the opportunity to connect with the crowd and showcase my performance style. Performing on a professional stage with club-standard equipment made this an important step towards festival sets.</p>
-                            <button class="recent-show-gallery-link" type="button" data-gallery="holiday-kickoff">Bilder ansehen <span aria-hidden="true">&rarr;</span></button>
+                            <p class="recent-show-text">Opening the night at Holiday Kickoff with a 90-minute Tech House set, I had the opportunity to connect with the crowd and showcase my performance style. Performing on a professional stage with club-standard equipment made this event an important step towards festival sets.</p>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="holiday-kickoff">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
                         </div>
                     </article>
 
-                    <article class="recent-show" id="saturday-bass-show">
+                    <article class="recent-show" id="divine-prottes-show">
+                        <figure class="recent-show-image">
+                            <button class="recent-show-image-button" type="button" data-gallery="divine-prottes" aria-label="Open DiVINE Prottes gallery">
+                                <img src="images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-8.webp" srcset="images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-8.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="DOMIX performing at DiVINE Prottes 2026" width="1920" height="1280" loading="lazy" decoding="async">
+                            </button>
+                            <button class="recent-show-image-nav recent-show-image-prev" type="button" aria-label="Previous DiVINE Prottes image"></button>
+                            <button class="recent-show-image-nav recent-show-image-next" type="button" aria-label="Next DiVINE Prottes image"></button>
+                            <div class="recent-show-image-dots" aria-label="DiVINE Prottes image selection"></div>
+                        </figure>
+
+                        <div class="recent-show-content">
+                            <div class="recent-show-heading">
+                                <h3>DiVINE Prottes</h3>
+                                <p>Prottes <span aria-hidden="true">&bull;</span> 01.08.2026</p>
+                            </div>
+                            <p class="recent-show-text">At DiVINE Prottes, I delivered an energetic Tech House set on a large public stage. The show combined crowd-focused selections, custom edits and spontaneous interaction in front of a festival audience.</p>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="divine-prottes">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
+                        </div>
+                    </article>
+
+                    <article class="recent-show recent-show-reverse" id="saturday-bass-show">
                         <figure class="recent-show-image">
                             <button class="recent-show-image-button" type="button" data-gallery="saturday-bass" aria-label="Open Saturday &amp; Bass gallery">
                                 <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp" srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="Saturday &amp; Bass Outback Wolkersdorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
@@ -137,15 +157,15 @@
                                 <h3>Saturday &amp; Bass</h3>
                                 <p>Outback Wolkersdorf <span aria-hidden="true">&bull;</span> 25.04.2026</p>
                             </div>
-                            <p class="recent-show-text">Saturday &amp; Bass was my first full Drum &amp; Bass set and my first outdoor DJ performance. Opening the event with a mix of Liquid and Dancefloor DnB marked the start of a new chapter in my musical journey.</p>
-                            <button class="recent-show-gallery-link" type="button" data-gallery="saturday-bass">Bilder ansehen <span aria-hidden="true">&rarr;</span></button>
+                            <p class="recent-show-text">Saturday &amp; Bass was my first full Drum &amp; Bass set and my first outdoor DJ performance. Opening the event with a mix of Liquid and Dancefloor DnB marked the start of a new chapter in my journey as an artist.</p>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="saturday-bass">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
                         </div>
                     </article>
 
-                    <article class="recent-show recent-show-reverse" id="inferno-show">
+                    <article class="recent-show recent-show-extra" id="inferno-show" hidden>
                         <figure class="recent-show-image">
                             <button class="recent-show-image-button" type="button" data-gallery="inferno" aria-label="Open Inferno gallery">
-                                <img src="images/domix/events/Inferno%202025/Inferno-1.jpg" srcset="images/domix/events/Inferno%202025/Inferno-1.jpg 1802w" sizes="(max-width: 900px) 100vw, 536px" alt="Inferno Matzen 2025" width="1802" height="1351" loading="lazy" decoding="async">
+                                <img data-src="images/domix/events/Inferno%202025/Inferno-1.jpg" data-srcset="images/domix/events/Inferno%202025/Inferno-1.jpg 1802w" sizes="(max-width: 900px) 100vw, 536px" alt="Inferno Matzen 2025" width="1802" height="1351" loading="lazy" decoding="async">
                             </button>
                             <button class="recent-show-image-nav recent-show-image-prev" type="button" aria-label="Previous Inferno image"></button>
                             <button class="recent-show-image-nav recent-show-image-next" type="button" aria-label="Next Inferno image"></button>
@@ -158,11 +178,11 @@
                                 <p>Matzen <span aria-hidden="true">&bull;</span> 20.09.2025</p>
                             </div>
                             <p class="recent-show-text">Inferno marked my first performance on a professional stage. Delivering a 90-minute Tech House set on a club-standard setup was an important step in my development as a DJ and introduced me to a new level of live performance.</p>
-                            <button class="recent-show-gallery-link" type="button" data-gallery="inferno">Bilder ansehen <span aria-hidden="true">&rarr;</span></button>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="inferno">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
                         </div>
                     </article>
 
-                    <article class="recent-show recent-show-extra" id="lange-einkaufsnacht-show" hidden>
+                    <article class="recent-show recent-show-reverse recent-show-extra" id="lange-einkaufsnacht-show" hidden>
                         <figure class="recent-show-image">
                             <button class="recent-show-image-button" type="button" data-gallery="lange-einkaufsnacht" aria-label="Open Lange Einkaufsnacht gallery">
                             <img data-src="images/domix/events/Lange%20Einkaufsnacht%202026/LangeEinkaufsnacht-8.webp" data-srcset="images/domix/events/Lange%20Einkaufsnacht%202026/LangeEinkaufsnacht-8.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="Lange Einkaufsnacht Gaenserndorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
@@ -178,11 +198,11 @@
                             <p>Gaenserndorf <span aria-hidden="true">&bull;</span> 08.05.2026</p>
                         </div>
                         <p class="recent-show-text">Lange Einkaufsnacht marked my first sponsored event in partnership with Marchfelder Bank. Playing a three-hour set in the heart of Gänserndorf gave me the opportunity to bring together a crowd of all ages.</p>
-                        <button class="recent-show-gallery-link" type="button" data-gallery="lange-einkaufsnacht">Bilder ansehen <span aria-hidden="true">&rarr;</span></button>
+                        <button class="recent-show-gallery-link" type="button" data-gallery="lange-einkaufsnacht">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
                     </div>
                     </article>
                 </div>
-                <button class="recent-shows-toggle" type="button" aria-expanded="false" aria-controls="lange-einkaufsnacht-show">View all shows</button>
+                <button class="recent-shows-toggle" type="button" aria-expanded="false" aria-controls="inferno-show lange-einkaufsnacht-show">View all shows</button>
             </div>
         </section>
 
@@ -240,6 +260,24 @@
         </div>
     </footer>
     <script>
+        const UPCOMING_SHOW_GRACE_DAYS = 1;
+
+        document.querySelectorAll('.shows-list .show-card').forEach((showCard) => {
+            const dateValue = showCard.querySelector('time[datetime]')?.getAttribute('datetime');
+            const dateParts = dateValue?.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+
+            if (!dateParts) return;
+
+            const year = Number(dateParts[1]);
+            const month = Number(dateParts[2]);
+            const day = Number(dateParts[3]);
+            const hideAfter = new Date(year, month - 1, day + UPCOMING_SHOW_GRACE_DAYS + 1);
+
+            if (Date.now() >= hideAfter.getTime()) {
+                showCard.hidden = true;
+            }
+        });
+
         const showGalleries = {
             flashover: {
                 title: 'FLASHOVER',
@@ -291,6 +329,35 @@
                     [1920, 1280],
                     [1920, 1280],
                     [1920, 1280]
+                ]
+            },
+            'divine-prottes': {
+                title: 'DiVINE PROTTES',
+                meta: 'Prottes \u2022 01.08.2026',
+                url: 'https://linktr.ee/divine_prottes',
+                images: [
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-8.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-4.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-11.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-15.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-1.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-2.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-12.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-14.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-21.webp',
+                    'images/domix/events/DiVINE%20Prottes%202026/DiVINE_Prottes_2026-16.webp'
+                ],
+                dimensions: [
+                    [1920, 1280],
+                    [1920, 1280],
+                    [1920, 1280],
+                    [1920, 1280],
+                    [1280, 1920],
+                    [1280, 1920],
+                    [1280, 1920],
+                    [1280, 1920],
+                    [1280, 1920],
+                    [1280, 1920]
                 ]
             },
             'lange-einkaufsnacht': {
@@ -649,19 +716,21 @@
         });
 
         const recentShowsToggle = document.querySelector('.recent-shows-toggle');
-        const extraRecentShow = document.getElementById('lange-einkaufsnacht-show');
+        const extraRecentShows = Array.from(document.querySelectorAll('.recent-show-extra'));
 
         function expandExtraRecentShow() {
-            if (!extraRecentShow || !extraRecentShow.hidden) return;
+            if (!extraRecentShows.length || extraRecentShows.every(function (show) { return !show.hidden; })) return;
 
-            extraRecentShow.hidden = false;
-            extraRecentShow.querySelectorAll('img[data-src]').forEach(function (image) {
-                image.src = image.dataset.src;
-                if (image.dataset.srcset) {
-                    image.srcset = image.dataset.srcset;
-                    image.removeAttribute('data-srcset');
-                }
-                image.removeAttribute('data-src');
+            extraRecentShows.forEach(function (show) {
+                show.hidden = false;
+                show.querySelectorAll('img[data-src]').forEach(function (image) {
+                    image.src = image.dataset.src;
+                    if (image.dataset.srcset) {
+                        image.srcset = image.dataset.srcset;
+                        image.removeAttribute('data-srcset');
+                    }
+                    image.removeAttribute('data-src');
+                });
             });
             recentShowsToggle.setAttribute('aria-expanded', 'true');
             recentShowsToggle.textContent = 'Show less';
@@ -671,7 +740,9 @@
         recentShowsToggle.addEventListener('click', function () {
             const isExpanded = recentShowsToggle.getAttribute('aria-expanded') === 'true';
             if (isExpanded) {
-                extraRecentShow.hidden = true;
+                extraRecentShows.forEach(function (show) {
+                    show.hidden = true;
+                });
                 recentShowsToggle.setAttribute('aria-expanded', 'false');
                 recentShowsToggle.textContent = 'View all shows';
                 queueActiveShowCardUpdate();

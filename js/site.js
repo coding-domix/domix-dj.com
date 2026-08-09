@@ -38,6 +38,25 @@
         });
     }
 
+    function initializeSoundCloudEmbeds() {
+        document.querySelectorAll('[data-soundcloud-src]').forEach(function (placeholder) {
+            var button = placeholder.querySelector('.soundcloud-consent-button');
+            if (!button) return;
+
+            button.addEventListener('click', function () {
+                var iframe = document.createElement('iframe');
+                iframe.title = placeholder.dataset.soundcloudTitle || 'SoundCloud player';
+                iframe.width = '100%';
+                iframe.height = '166';
+                iframe.scrolling = 'no';
+                iframe.frameBorder = '0';
+                iframe.allow = 'autoplay; encrypted-media';
+                iframe.src = placeholder.dataset.soundcloudSrc;
+                placeholder.replaceWith(iframe);
+            }, { once: true });
+        });
+    }
+
     function addCssImageUrls(value, urls) {
         if (!value || value === 'none') return;
 
@@ -211,6 +230,7 @@
 
     function initializePage() {
         initializeRevealSections();
+        initializeSoundCloudEmbeds();
 
         if (!shouldUnlockPage) return;
 
