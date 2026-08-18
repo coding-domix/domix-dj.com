@@ -4549,7 +4549,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
     .about-introduction .about-prose,
     .about-sound .about-prose,
     .about-production .about-production-text,
-    .about-page-section.about-partner .about-section-copy > p:last-child {
+    .about-page-section.about-partner .about-partner-text {
         margin-top: clamp(1.3rem, 1.9vw, 1.75rem);
     }
 
@@ -4684,7 +4684,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
 
 .about-prose p,
 .about-production-text,
-.about-partner .about-section-copy > p:last-child {
+.about-partner-text {
     margin: 0;
     color: var(--about-muted);
     font-size: clamp(1rem, 1.12vw, 1.12rem);
@@ -4942,7 +4942,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
 
 .about-timeline p,
 .about-services p,
-.about-partner .about-section-copy > p:last-child {
+.about-partner-text {
     margin: 0;
     color: var(--about-muted);
     font-size: clamp(0.88rem, 0.95vw, 1rem);
@@ -5096,7 +5096,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
     gap: clamp(5rem, 9vw, 9rem);
 }
 
-.about-partner .about-section-copy > p:last-child {
+.about-partner-text {
     max-width: 600px;
     margin-top: clamp(2rem, 3vw, 2.8rem);
 }
@@ -5314,6 +5314,11 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
         min-height: 220px;
     }
 
+}
+
+.about-partner-logo a {
+    display: block;
+    width: min(100%, 540px);
 }
 
 @media (max-width: 620px) {
@@ -7714,7 +7719,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
 
     .about-prose,
     .about-production-text,
-    .about-partner .about-section-copy > p:last-child {
+    .about-partner-text {
         width: 100%;
         max-width: 650px;
         text-align: left;
@@ -7722,7 +7727,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
 
     .about-prose p,
     .about-production-text,
-    .about-partner .about-section-copy > p:last-child,
+    .about-partner-text,
     .about-timeline p,
     .about-services p {
         font-size: clamp(1rem, 2.25vw, 1.08rem);
