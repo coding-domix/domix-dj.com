@@ -2721,7 +2721,8 @@ html.page-loader-pending body::after {
     white-space: nowrap;
 }
 
-#lange-einkaufsnacht-show .recent-show-heading h3 {
+#lange-einkaufsnacht-show .recent-show-heading h3,
+#lange-einkaufsnacht-september-show .recent-show-heading h3 {
     white-space: normal;
 }
 
