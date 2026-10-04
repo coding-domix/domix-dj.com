@@ -58,13 +58,6 @@
 
                 <div class="shows-list" aria-label="Upcoming shows">
                     <article class="show-card">
-                        <time datetime="2026-10-03">03 OCT 2026</time>
-                        <h3>THE BLOWING</h3>
-                        <p>Marchegg <span class="show-card-date">&bull; 03 OCT 2026</span></p>
-                        <a class="show-card-action" href="https://www.theblowing.at" target="_blank" rel="noopener noreferrer">TICKETS</a>
-                    </article>
-
-                    <article class="show-card">
                         <time datetime="2026-11-06">06 NOV 2026</time>
                         <h3>FOMO WODO</h3>
                         <p>Wolkersdorf <span class="show-card-date">&bull; 06 NOV 2026</span></p>
@@ -88,6 +81,26 @@
                 <h2 id="recent-shows-title">Past Shows</h2>
 
                 <div class="recent-shows-list">
+                    <article class="recent-show recent-show-reverse" id="the-blowing-marchegg-show">
+                        <figure class="recent-show-image">
+                            <button class="recent-show-image-button" type="button" data-gallery="the-blowing-marchegg" aria-label="Open THE BLOWING gallery">
+                                <img src="images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-1.webp" srcset="images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-1.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="DOMIX on stage with smoke and sparks at THE BLOWING Marchegg 2026" width="1920" height="1440" loading="lazy" decoding="async">
+                            </button>
+                            <button class="recent-show-image-nav recent-show-image-prev" type="button" aria-label="Previous THE BLOWING image"></button>
+                            <button class="recent-show-image-nav recent-show-image-next" type="button" aria-label="Next THE BLOWING image"></button>
+                            <div class="recent-show-image-dots" aria-label="THE BLOWING image selection"></div>
+                        </figure>
+
+                        <div class="recent-show-content">
+                            <div class="recent-show-heading">
+                                <h3>THE BLOWING</h3>
+                                <p>Marchegg <span aria-hidden="true">&bull;</span> 03.10.2026</p>
+                            </div>
+                            <p class="recent-show-text">THE BLOWING marked the final festival show of my 2026 season. Opening the night in Marchegg, I set the tone with a 75-minute set built around my signature electronic sound. Playing this stage in front of a growing crowd was the perfect way to close out an eventful festival season and another step forward for DOMIX.</p>
+                            <button class="recent-show-gallery-link" type="button" data-gallery="the-blowing-marchegg">VIEW PHOTOS <span aria-hidden="true">&rarr;</span></button>
+                        </div>
+                    </article>
+
                     <article class="recent-show" id="flashover-show">
                         <figure class="recent-show-image">
                             <button class="recent-show-image-button" type="button" data-gallery="flashover" aria-label="Open FlashOver gallery">
@@ -148,10 +161,10 @@
                         </div>
                     </article>
 
-                    <article class="recent-show recent-show-reverse" id="saturday-bass-show">
+                    <article class="recent-show recent-show-reverse recent-show-extra" id="saturday-bass-show" hidden>
                         <figure class="recent-show-image">
                             <button class="recent-show-image-button" type="button" data-gallery="saturday-bass" aria-label="Open Saturday &amp; Bass gallery">
-                                <img src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp" srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="Saturday &amp; Bass Outback Wolkersdorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
+                                <img data-src="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp" data-srcset="images/domix/events/Saturday%20%26%20Bass%202026/Outback_1-06.webp 1920w" sizes="(max-width: 900px) 100vw, 536px" alt="Saturday &amp; Bass Outback Wolkersdorf 2026" width="1920" height="1280" loading="lazy" decoding="async">
                             </button>
                             <button class="recent-show-image-nav recent-show-image-prev" type="button" aria-label="Previous Saturday and Bass image"></button>
                             <button class="recent-show-image-nav recent-show-image-next" type="button" aria-label="Next Saturday and Bass image"></button>
@@ -248,7 +261,7 @@
                         </div>
                     </article>
                 </div>
-                <button class="recent-shows-toggle" type="button" aria-expanded="false" aria-controls="inferno-show lange-einkaufsnacht-show lange-einkaufsnacht-september-show hoefefest-show">View all shows</button>
+                <button class="recent-shows-toggle" type="button" aria-expanded="false" aria-controls="saturday-bass-show inferno-show lange-einkaufsnacht-show lange-einkaufsnacht-september-show hoefefest-show">SHOW MORE</button>
             </div>
         </section>
 
@@ -326,6 +339,35 @@
         });
 
         const showGalleries = {
+            'the-blowing-marchegg': {
+                title: 'THE BLOWING',
+                meta: 'Marchegg \u2022 03.10.2026',
+                url: 'https://www.theblowing.at',
+                images: [
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-1.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-2.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-8.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-4.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-7.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-5.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-3.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-9.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-6.webp',
+                    'images/domix/events/THE%20BLOWING%20Marchegg%202026/The-Blowing-10.webp'
+                ],
+                dimensions: [
+                    [1920, 1440],
+                    [1920, 1440],
+                    [1280, 1705],
+                    [1280, 1707],
+                    [1280, 1705],
+                    [1920, 1441],
+                    [1920, 1440],
+                    [1920, 1441],
+                    [1280, 1705],
+                    [1920, 1440]
+                ]
+            },
             flashover: {
                 title: 'FLASHOVER',
                 meta: 'Loidesthal \u2022 13.05.2026',
@@ -842,7 +884,7 @@
                     show.hidden = true;
                 });
                 recentShowsToggle.setAttribute('aria-expanded', 'false');
-                recentShowsToggle.textContent = 'View all shows';
+                recentShowsToggle.textContent = 'SHOW MORE';
                 queueActiveShowCardUpdate();
                 return;
             }
