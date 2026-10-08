@@ -152,6 +152,21 @@
     <script>
         const musicReleases = [
             {
+                title: 'THE BLOWING 2026 LIVE SET',
+                category: 'set',
+                genre: 'Tech House',
+                duration: '75:00',
+                cover: 'images/domix/sets/the-blowing-2026.webp',
+                soundcloudUrl: 'https://soundcloud.com/domix_dj/domix-the-blowing-marchegg-2026-live-set',
+                spotifyUrl: '#',
+                downloadUrl: '#',
+                previewUrl: '',
+                platform: 'SoundCloud',
+                setType: 'LIVE SET',
+                event: 'THE BLOWING',
+                setMeta: 'TECH HOUSE • OPENING SET • 75 MIN'
+            },
+            {
                 title: 'Starships x Stay Focused (DOMIX Mashup)',
                 category: 'mashup',
                 genre: 'Tech House',
@@ -202,21 +217,6 @@
                 setType: 'CONTEST SET',
                 event: 'TOMORROWLAND ACADEMY',
                 setMeta: 'TECH HOUSE • CONTEST SUBMISSION • 30 MIN'
-            },
-            {
-                title: 'Inferno Matzen Tech House Warmup',
-                category: 'set',
-                genre: 'Tech House',
-                duration: '90:00',
-                cover: 'images/domix/events/Inferno%202025/Inferno-1.jpg',
-                soundcloudUrl: 'https://soundcloud.com/domix_dj/domix-live-at-inferno-matzen-2025-tech-house-warmup',
-                spotifyUrl: '#',
-                downloadUrl: '#',
-                previewUrl: '',
-                platform: 'SoundCloud',
-                setType: 'LIVE SET',
-                event: 'INFERNO MATZEN',
-                setMeta: 'TECH HOUSE · OPENING SET · 60 MIN'
             },
             {
                 title: 'Hotel Room Service x I Adore You (DOMIX Mashup)',
@@ -353,8 +353,8 @@
         };
 
         const mediaDimensions = {
+            'images/domix/sets/the-blowing-2026.webp': [1536, 1536],
             'images/domix/sets/cafe-opera-tomorrowland-academy.png': [1080, 1080],
-            'images/domix/events/Inferno%202025/Inferno-1.jpg': [1802, 1351],
             'images/domix/playlists/club-control.webp': [1920, 1920],
             'images/domix/playlists/nitelife.webp': [1400, 1400],
             'images/domix/playlists/rumblin.webp': [1400, 1400],
@@ -840,7 +840,7 @@
                             <span class="music-set-meta">${release.setMeta || `${release.genre} / ${release.duration}`}</span>
                             <span class="music-waveform" aria-hidden="true">${createWaveform()}</span>
                         </span>
-                        <span class="music-set-action">LISTEN ON SOUNDCLOUD ↗</span>
+                        <span class="music-set-action">LISTEN ↗</span>
                     </a>
                 `;
             }).join('');

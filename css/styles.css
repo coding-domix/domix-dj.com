@@ -3608,7 +3608,7 @@ html.page-loader-pending body::after {
 }
 
 .music-set-action {
-    min-width: 206px;
+    min-width: 132px;
     margin-top: 0;
     font-size: 0.64rem;
     white-space: nowrap;
@@ -4181,7 +4181,7 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
         justify-self: start;
         width: 100%;
         min-width: 0;
-        max-width: 206px;
+        max-width: 132px;
         margin-top: 0.8rem;
     }
 
@@ -7656,6 +7656,8 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
 
     .music-set-action {
         min-height: 48px;
+        width: 132px;
+        justify-self: center;
         margin-top: 0;
         white-space: normal;
         text-align: center;
