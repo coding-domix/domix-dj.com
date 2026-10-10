@@ -139,9 +139,9 @@
             </div>
 
             <nav class="site-footer-socials" aria-label="Social links">
-                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.png" alt="" width="3000" height="3000" loading="lazy" decoding="async"></a>
+                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.webp" alt="" width="3000" height="3000" loading="lazy" decoding="async"></a>
                 <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="images/social/tiktok-icon.svg" alt="" width="150" height="150" loading="lazy" decoding="async"></a>
-                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.png" alt="" width="512" height="512" loading="lazy" decoding="async"></a>
+                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"></a>
             </nav>
 
             <p class="site-footer-mobile-copyright">&copy; 2026 DOMIX</p>
@@ -208,7 +208,7 @@
                 category: 'set',
                 genre: 'Tech House',
                 duration: '30:00',
-                cover: 'images/domix/sets/cafe-opera-tomorrowland-academy.png',
+                cover: 'images/domix/sets/cafe-opera-tomorrowland-academy.webp',
                 soundcloudUrl: 'https://soundcloud.com/domix_dj/cafe-opera-stockholm-domix',
                 spotifyUrl: '#',
                 downloadUrl: '#',
@@ -236,7 +236,7 @@
                 category: 'remix',
                 genre: 'House',
                 duration: '00:30',
-                cover: 'releases/remixes/where-have-you-been/cover.png',
+                cover: 'releases/remixes/where-have-you-been/cover.webp',
                 soundcloudUrl: 'https://soundcloud.com/domix_dj/where-have-you-been',
                 spotifyUrl: '#',
                 previewUrl: 'releases/remixes/where-have-you-been/preview.mp3',
@@ -354,7 +354,7 @@
 
         const mediaDimensions = {
             'images/domix/sets/the-blowing-2026.webp': [1536, 1536],
-            'images/domix/sets/cafe-opera-tomorrowland-academy.png': [1080, 1080],
+            'images/domix/sets/cafe-opera-tomorrowland-academy.webp': [1080, 1080],
             'images/domix/playlists/club-control.webp': [1920, 1920],
             'images/domix/playlists/nitelife.webp': [1400, 1400],
             'images/domix/playlists/rumblin.webp': [1400, 1400],
@@ -366,7 +366,7 @@
             'releases/remixes/smells-like-teen-spirit/cover.webp': [1920, 1920],
             'releases/remixes/starships-x-stay-focused/cover.webp': [1920, 1920],
             'releases/remixes/traum-x-intoxicated/cover.webp': [1920, 1920],
-            'releases/remixes/where-have-you-been/cover.png': [825, 825],
+            'releases/remixes/where-have-you-been/cover.webp': [825, 825],
             'releases/remixes/wissen-wer-der-babo-ist-x-breathe/cover.webp': [1920, 1920],
             'releases/starships-x-stay-focused/cover.webp': [1920, 1920]
         };
@@ -388,10 +388,53 @@
         let featuredContentObserver = null;
         let activeRemixPreviewId = null;
         let showAllRemixes = false;
+        const pendingAudioSeeks = new WeakMap();
+        const audioPlayRequests = new WeakMap();
         featuredPreviewAudio.preload = 'none';
         remixPreviewAudio.preload = 'none';
 
+        function cancelPendingAudioSeek(audio) {
+            const pendingSeek = pendingAudioSeeks.get(audio);
+            if (!pendingSeek) return;
+            audio.removeEventListener('loadedmetadata', pendingSeek);
+            pendingAudioSeeks.delete(audio);
+        }
+
+        function applyAudioSeek(audio, absoluteUrl, applySeek) {
+            cancelPendingAudioSeek(audio);
+            if (audio.src === absoluteUrl && audio.readyState >= 1) {
+                applySeek();
+                return;
+            }
+
+            const onMetadata = function () {
+                cancelPendingAudioSeek(audio);
+                if (audio.src === absoluteUrl) applySeek();
+            };
+            pendingAudioSeeks.set(audio, onMetadata);
+            audio.addEventListener('loadedmetadata', onMetadata, { once: true });
+            if (audio.src !== absoluteUrl) {
+                audioPlayRequests.set(audio, (audioPlayRequests.get(audio) || 0) + 1);
+                audio.pause();
+                audio.src = absoluteUrl;
+                audio.load();
+            }
+        }
+
+        function requestAudioPlayback(audio, onFailure) {
+            const requestId = (audioPlayRequests.get(audio) || 0) + 1;
+            audioPlayRequests.set(audio, requestId);
+            const playRequest = audio.play();
+            if (playRequest) {
+                playRequest.catch(function () {
+                    // A replaced play() request must not reset the current track.
+                    if (audioPlayRequests.get(audio) === requestId) onFailure();
+                });
+            }
+        }
+
         function releaseAudioSource(audio) {
+            cancelPendingAudioSeek(audio);
             if (!audio.getAttribute('src')) return;
             audio.removeAttribute('src');
             audio.load();
@@ -509,6 +552,7 @@
         }
 
         function pauseRemixPreview(resetProgress) {
+            if (resetProgress) cancelPendingAudioSeek(remixPreviewAudio);
             remixPreviewAudio.pause();
             if (resetProgress && remixPreviewAudio.src) remixPreviewAudio.currentTime = 0;
             if (resetProgress) activeRemixPreviewId = null;
@@ -523,19 +567,17 @@
             if (mobileMusicQuery.matches) releaseAudioSource(featuredPreviewAudio);
             const absoluteUrl = new URL(release.previewUrl, document.baseURI).href;
             if (remixPreviewAudio.src !== absoluteUrl) {
+                cancelPendingAudioSeek(remixPreviewAudio);
                 remixPreviewAudio.src = absoluteUrl;
                 remixPreviewAudio.load();
             }
 
             activeRemixPreviewId = release.id;
-            const playRequest = remixPreviewAudio.play();
-            if (playRequest) {
-                playRequest.catch(function () {
-                    activeRemixPreviewId = null;
-                    setRemixPlaybackState(false);
-                    updateRemixPreviewProgress();
-                });
-            }
+            requestAudioPlayback(remixPreviewAudio, function () {
+                activeRemixPreviewId = null;
+                setRemixPlaybackState(false);
+                updateRemixPreviewProgress();
+            });
         }
 
         function toggleRemixPreview(release) {
@@ -565,21 +607,12 @@
                 if (startPlayback && remixPreviewAudio.paused) playRemixPreview(release);
             };
 
-            if (remixPreviewAudio.src !== absoluteUrl) {
-                remixPreviewAudio.pause();
-                activeRemixPreviewId = release.id;
-                remixPreviewAudio.src = absoluteUrl;
-                remixPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
-                remixPreviewAudio.load();
+            const sourceChanged = remixPreviewAudio.src !== absoluteUrl;
+            if (sourceChanged) activeRemixPreviewId = release.id;
+            applyAudioSeek(remixPreviewAudio, absoluteUrl, applySeek);
+            if (sourceChanged) {
                 setRemixPlaybackState(false);
                 updateRemixPreviewProgress();
-                return;
-            }
-
-            if (remixPreviewAudio.readyState >= 1) {
-                applySeek();
-            } else {
-                remixPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
             }
         }
 
@@ -614,18 +647,7 @@
                 }
             };
 
-            if (featuredPreviewAudio.src !== absoluteUrl) {
-                featuredPreviewAudio.src = absoluteUrl;
-                featuredPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
-                featuredPreviewAudio.load();
-                return;
-            }
-
-            if (featuredPreviewAudio.readyState >= 1) {
-                applySeek();
-            } else {
-                featuredPreviewAudio.addEventListener('loadedmetadata', applySeek, { once: true });
-            }
+            applyAudioSeek(featuredPreviewAudio, absoluteUrl, applySeek);
         }
 
         function setFeaturedPlaybackState(isPlaying) {
@@ -656,19 +678,18 @@
             if (mobileMusicQuery.matches) releaseAudioSource(remixPreviewAudio);
             const absoluteUrl = new URL(url, document.baseURI).href;
             if (featuredPreviewAudio.src !== absoluteUrl) {
+                cancelPendingAudioSeek(featuredPreviewAudio);
                 featuredPreviewAudio.src = absoluteUrl;
                 featuredPreviewAudio.load();
             }
 
-            const playRequest = featuredPreviewAudio.play();
-            if (playRequest) {
-                playRequest.catch(function () {
-                    setFeaturedPlaybackState(false);
-                });
-            }
+            requestAudioPlayback(featuredPreviewAudio, function () {
+                setFeaturedPlaybackState(false);
+            });
         }
 
         function pauseFeaturedPreview(resetProgress) {
+            if (resetProgress) cancelPendingAudioSeek(featuredPreviewAudio);
             featuredPreviewAudio.pause();
             if (resetProgress && featuredPreviewAudio.src) {
                 featuredPreviewAudio.currentTime = 0;

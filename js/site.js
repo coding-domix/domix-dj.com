@@ -117,6 +117,8 @@
     function waitForDomImage(image, status) {
         return new Promise(function (resolve) {
             function finish(didFail) {
+                image.removeEventListener('load', onLoad);
+                image.removeEventListener('error', onError);
                 if (didFail) {
                     status.failed += 1;
                 } else {
@@ -127,31 +129,28 @@
                 decodeImage(image).finally(resolve);
             }
 
+            function onLoad() { finish(false); }
+            function onError() { finish(true); }
+
             if (image.complete) {
                 finish(!image.naturalWidth);
                 return;
             }
 
-            image.addEventListener('load', function () {
-                finish(false);
-            }, { once: true });
-            image.addEventListener('error', function () {
-                finish(true);
-            }, { once: true });
+            image.addEventListener('load', onLoad, { once: true });
+            image.addEventListener('error', onError, { once: true });
         });
     }
 
-    function preloadImageUrl(url, status) {
+    function getPreloadImage(url) {
         var cachedImage = preloadCache.get(url);
-        if (cachedImage) {
-            return waitForDomImage(cachedImage, status);
-        }
+        if (cachedImage) return cachedImage;
 
         var image = new Image();
         image.decoding = 'async';
         preloadCache.set(url, image);
         image.src = url;
-        return waitForDomImage(image, status);
+        return image;
     }
 
     function createHeaderPreloadContext() {
@@ -169,26 +168,15 @@
         return {
             domImages: domImages,
             urls: Array.from(urls),
-            headerAssetUrls: headerAssetUrls
+            headerImages: domImages.concat(headerAssetUrls.map(getPreloadImage))
         };
     }
 
-    function isImageCached(url) {
-        return fetch(url, {
-            cache: 'only-if-cached',
-            mode: 'same-origin'
-        }).then(function (response) {
-            return response.ok;
-        }).catch(function () {
-            return false;
-        });
-    }
-
     function areHeaderImagesCached(context) {
-        if (!context || !context.urls.length) return Promise.resolve(true);
-
-        return Promise.all(context.urls.map(isImageCached)).then(function (results) {
-            return results.every(Boolean);
+        // Inspect the actual images; a cache-only fetch can fail while an image
+        // is still in flight and adds a second request for every header asset.
+        return !context || context.headerImages.every(function (image) {
+            return image.complete && image.naturalWidth > 0;
         });
     }
 
@@ -198,7 +186,7 @@
         var status = window.DOMIX_HEADER_PRELOAD_STATUS = {
             complete: false,
             cacheHit: cacheHit,
-            total: context.domImages.length + context.headerAssetUrls.length,
+            total: context.headerImages.length,
             loaded: 0,
             failed: 0,
             urls: context.urls
@@ -208,11 +196,9 @@
         document.documentElement.dataset.preloadLoaded = '0';
         document.documentElement.dataset.preloadFailed = '0';
         document.documentElement.dataset.preloadCacheHit = String(cacheHit);
-        var imagePromises = context.domImages.map(function (image) {
+        var imagePromises = context.headerImages.map(function (image) {
             return waitForDomImage(image, status);
-        }).concat(context.headerAssetUrls.map(function (url) {
-            return preloadImageUrl(url, status);
-        }));
+        });
         var fontPromise = document.fonts ? document.fonts.ready.catch(function () {}) : Promise.resolve();
 
         return Promise.all(imagePromises.concat(fontPromise)).then(function () {
@@ -235,7 +221,7 @@
         if (!shouldUnlockPage) return;
 
         var context = createHeaderPreloadContext();
-        areHeaderImagesCached(context).then(function (cacheHit) {
+        Promise.resolve(areHeaderImagesCached(context)).then(function (cacheHit) {
             if (!cacheHit) {
                 document.documentElement.classList.add('page-loading');
                 document.documentElement.dataset.preloadLoaderShown = 'true';

@@ -309,9 +309,9 @@
             </div>
 
             <nav class="site-footer-socials" aria-label="Social links">
-                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.png" alt="" width="3000" height="3000" loading="lazy" decoding="async"></a>
+                <a href="https://www.instagram.com/domix.dj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="images/social/instagram-icon.webp" alt="" width="3000" height="3000" loading="lazy" decoding="async"></a>
                 <a href="https://www.tiktok.com/@domix.dj" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="images/social/tiktok-icon.svg" alt="" width="150" height="150" loading="lazy" decoding="async"></a>
-                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.png" alt="" width="512" height="512" loading="lazy" decoding="async"></a>
+                <a href="https://soundcloud.com/domix_dj" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><img src="images/social/soundcloud-icon.webp" alt="" width="512" height="512" loading="lazy" decoding="async"></a>
             </nav>
 
             <p class="site-footer-mobile-copyright">&copy; 2026 DOMIX</p>
@@ -704,8 +704,8 @@
             lightbox.hidden = true;
             lightbox.setAttribute('aria-hidden', 'true');
             document.body.classList.remove('lightbox-open');
-            lightboxImage.src = '';
-            lightboxImage.srcset = '';
+            lightboxImage.removeAttribute('srcset');
+            lightboxImage.removeAttribute('src');
             activeGallery = null;
             activeImageIndex = 0;
             lastLightboxTrigger = null;
@@ -952,6 +952,8 @@
                 return;
             }
             if (event.key === ' ' || event.key === 'Enter') {
+                // Preserve native activation of the focused gallery control.
+                if (event.target.closest('button, a, input, select, textarea, [contenteditable]')) return;
                 event.preventDefault();
                 event.stopPropagation();
                 stepLightbox(1);
@@ -965,7 +967,16 @@
         function centerLinkedShow() {
             if (!window.location.hash) return;
 
-            const targetId = decodeURIComponent(window.location.hash.slice(1));
+            let targetId;
+            try {
+                targetId = decodeURIComponent(window.location.hash.slice(1));
+            } catch (error) {
+                // Invalid URL escapes cannot identify an element on this page.
+                if (error instanceof URIError) return;
+                throw error;
+            }
+            // Preserve the historical contact/reference deep link.
+            if (targetId === 'marchfelder-bank-show') targetId = 'lange-einkaufsnacht-show';
             const target = document.getElementById(targetId);
             if (!target) return;
 

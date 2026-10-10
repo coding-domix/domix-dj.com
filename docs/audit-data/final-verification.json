@@ -1,0 +1,1944 @@
+{
+  "verifiedOn": "2026-10-10",
+  "baselineRevision": "6429a70310dc5fc45f44be36ee5aaa1d7403b587",
+  "validLighthouseReports": 72,
+  "measurementStart": "2026-10-08T07:48:11.170Z",
+  "measurementEnd": "2026-10-08T07:57:50.719Z",
+  "baselineFilesVerified": 124,
+  "productionFilesHashed": 128,
+  "inlineScriptsParsed": 16,
+  "productionUnchangedSinceMeasurements": true,
+  "mailtoTargetsUnchanged": true,
+  "reports": [
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:48:11.170Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "e817113c500ce61c7359068d0fe27883cd3ff5bd4ede4a7c76439164f62b911d"
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:48:19.132Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "d13bdb2b9d1057c23ae1aa1d0c87fcb1664374c46ebddb412e94d1ca7f10704d"
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:48:26.681Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "1ce3e1dd41c484cac83f75e0449c4fbdf2209a768fbc4c5d404b3cf2cf690b1a"
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:48:34.345Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "54d61e041601b2c9f017861494672d329be24a5274b75d4d921864346bf6ad72"
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:48:42.578Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "cef4e212ab289db659121f88cee07b076467c5df77caeba2586870208d02af05"
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:48:50.581Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "f10da6100e575e92231db231db7260ce50b9b42e269c52d270032aff8e03d295"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:48:59.140Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "23dec5785e3653403e179b3980ee9395258da92960501b38610933ce2543367c"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:49:07.149Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "f5cbce4a46ed4a6738c15408db48ceb03f32f01ff9184956c6799045c018a825"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:49:14.650Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "8496d7e30d372021b9f9e5fdcbe8425ec21155815d54991f7e10bf4c971620a5"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:49:22.783Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "15186e60ab8b3639d7c6a957dc1696dd049db2babfea7b185d25f7071c1951df"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:49:30.369Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "072f0bf7a456310d72ec898b1fd071fe2e7faab3116ddc498ffc76a061fecf78"
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:49:37.798Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "cd19c5b7cd12aee58dcd0bc3f12810bc02af3c50ea6bc65117b151a0495cc48d"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:49:45.083Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "1f1c4e55034b36fa68a57c56ed44f46c5fdba8553cd9e7016944ea2f58625a2f"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:49:53.229Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "0a198f27f507cca0101efff9d353df577309d4579a4e0e2908ce45826420b616"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:50:01.458Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "e9127c944d9dc13edf1e279e104ab23af213936b089950352c306350c8508fe7"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:50:09.426Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "f40bd3fd3c34daf603bc1502d2e6d42d0717159ca48d7203c3b302ee609eb37a"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:50:17.282Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "393dba39f57b0bc5cee86fd4c3f5d4839ea5ac8d9cc52d7e942f678d6325fe94"
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:50:25.831Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "0da6f1feaeb8e0f901b9c88d9732457508135c1aca930966ce52b326e7768ba6"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:50:35.318Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "ef315a4a17705634e7ff445988278f0767725fe55b4ecfdfb3e59cab7ea9cedd"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:50:44.418Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "6b7d7ad748606e971905ec211e0d8dca6b176490ca50df52b7f853bd36143759"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:50:52.358Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "13a3ce9b4cf2771373b17733056d72b4c89f3873e05fe7739aed5b599cce5f5f"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:51:00.501Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "6c5c93e05fc493092a6618ae5e5921714f4c5114011e23fa1edf61453632d22b"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:51:08.543Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "e9205b730e6ecdedc17aa8c36d0bfed852c051ae897dfded1cfb9d62421138ab"
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:51:16.337Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "21c439a2b779612bfd64f8492ca0484e931816d3eb98afe7a20e1c5c0be9529c"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:51:23.743Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "ec4ca5b9acde2b531202ddbd6d628c51a22bd99d424a3942ceae036241279b35"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:51:31.485Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "403dbdaa0ebcc896e0ca8c261ee71fa18f8a8615f7112333cec7b1420496471b"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:51:39.465Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "cf2ed652efb00dafe7ba4297bcab5a4f9c41b7bbdd794fc523480ae2efa4f46c"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:51:47.464Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "e70d19b1332a0131e3a3385f268649b9d61d344856a4d4760228d66c0bcf6857"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:51:55.273Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "29d965d1dc45798225eac087e95e04390395abfe14ae6e06edf85d28df98aab9"
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:52:03.811Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "6e0464f1cb9813cb8de1cc827152ec0b703f9f570b0b1b028eef23ef5c228f64"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:52:12.129Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "8fa8600c6af1dc67af3fd2f99d2d0ffca4a0619eb1e1df7f843d353b3b4574ae"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:52:19.032Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "843ca679df43c5f2e837b6425877b8c34da47b7a4476c05e7dc716260b2b584a"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:52:26.034Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "67e27976519d7eb6291451cf46bacca888b9adee19df90f81d5de8dab971c5a3"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:52:33.340Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "c1ea485285eae5b5d08c67abeb1aca95b70d36babd5dc58d8d384a3ab4bfde2a"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:52:41.133Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "2e17b38799fe4411fd4f067a56e426dbd6de8805650a033c7391c321412c2dbc"
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:52:49.070Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "fc14f1badfa060e4980e8d85dbec17f57619d4eb6232aea296adfe16a9c140eb"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:53:03.136Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "61926b0110102067d3ddcf0735c66b0c47f185a24d19d9d57c1e5489ecc2a008"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:53:13.202Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "17113077e68aa41262adcb17aa8ca337e0abded5ca6ecf2f6ad80afd800943cb"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:53:22.649Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "ed30c1eb14a7d6af6dc1504ae6defb96c22e107e8571cd2a2304aad3a8c48488"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:53:30.806Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "22b3b6071119f6a74589729030d452373e19c33aad74c66acbc1d101557d9355"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:53:38.897Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "ce6afe3bb87df49efbf02edd5290a851d3d6cf54619b615319869f8fc45d1ead"
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:53:47.360Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "6aab42dc60d6579d7db84a418bef451a7bcc419751218d6b43bcef1cb06a0ab1"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:53:56.508Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "e90659d25bd64204c146b525cf48a8386e79f48890aa62ba4701f325c5c340ab"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:54:04.565Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "d4a04a1285c4a56875e0804147b441378697d5db631e173521defcf86d40074d"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:54:12.256Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "b8532c21c78e7a51614556c26c5207862deb3bc5d9eea7e3a138654feaf9eef9"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:54:20.267Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "a9cbc8afd3fc67a77d5475fa1ebed6db2e4446c25e8a2b9a0b93b2cb656c64cc"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:54:28.140Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "f0ab5aff3f0d7e4a3423ddbcdfc22a74444ad6fce28f9e2fd69a5a36438d19e6"
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:54:36.311Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "b70693f987a3ca0cb51c44ca5145b61ee3aa083a9d90084d6c5f60cafa52630d"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:54:44.846Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "2a16d8f070854b31abfc9f312f61c2babebb1a4807d4b417d5e98c97ebf4870e"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:54:53.563Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "4c7c878001ea53a47e165c84f8a8d21e4d0251a8030d1c9240700b81191b6559"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:55:01.503Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "6e18cfeefe70beb8c08c49b6a1f3b572f584fd14e106e2c25efff93b78021846"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:55:10.585Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "3dc66dd0ae8ac5922fe42a49cb5b06a5f28bf72cbd000b9ecaf42fa418e2a5ac"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:55:18.133Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "45bed710117ef48e45fa91ae00e79226c746581f13e10c12132e878f45aee0b7"
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:55:25.939Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "b6418f12468a5a61460e1e452db164fe68002234468761e5cdfce502a45ec2cb"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:55:34.580Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "bd873560192ff8594cc18db5dcca3ba936397c92494fbd8fe9721b6f0357e019"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:55:42.650Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "f3d9080e1dd57c602483175e9816991835933b0643d70edc1b7292bce1a48b91"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:55:50.392Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "6a8dbddf1342383290e604c52572ba068e67ef3cc1e9ba7686067e82ab31f181"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:55:58.638Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "f3d8ab8e110b6b1e068654b0158bc0894a4f7e72f08bdd4831d53ef8f8b6fe83"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:56:06.394Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "7cfe7e7c048a7e83aeb3c8ec0dab2055a0ddb0f90691868106188544559d3c45"
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:56:15.266Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "4ef9c39837fa7cf650f95a0aa18e7a0cbb1415c7efbf1a577fe54813afdf16e5"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:56:25.459Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "fc1264aa328c6b451fa297649905d2feed007a1e0fefece0c1a5c6ad062d2bfe"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:56:33.652Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "bca1b363686e33fd91996e5ce8bb483467618fe575d41a059f9dc7cd3d73e077"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:56:42.204Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "20da98a7b87bafc21db38309575425340ff8410c4b9ebc08345e572d0db3f19c"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:56:50.062Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "e022e08e998ca20ff4cebbb2b894b9c0c65fa2bccaf8f35c796b69b1e8b48fe2"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:56:57.635Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "b8451f47fd2c4b9541461b19b8d7d742f88b5d498ac8ca561ed060df7ff61f9d"
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:57:05.679Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "dfef80c2db2b369457d64782b923284d68dd2d5bc7d3eff7fb64c9be85585f5d"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 1,
+      "date": "2026-10-08T07:57:13.626Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "c54e71f312e49c0eac0334b9382534d2fdde6b82a6ff903ea9edece1b639cedf"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 2,
+      "date": "2026-10-08T07:57:21.002Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "040d9062d223e1f944271779181880a4e5e96dcb93e86a4969badadd15892830"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "run": 3,
+      "date": "2026-10-08T07:57:28.617Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 4
+        },
+        "screenEmulation": {
+          "mobile": true,
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "disabled": false
+        }
+      },
+      "sha256": "69e095e6f170bcaaf6568c0036f94292f1a8b549093c6905b97d3d9d7ecb1442"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 1,
+      "date": "2026-10-08T07:57:36.114Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "1fbaef2954f0657cc9ee4ff63e5be80a0bf88d5ab63c5dd4b3be1762000bd17d"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 2,
+      "date": "2026-10-08T07:57:43.547Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "b63a77caad5b3032a8ff527377b7121735f2bea8a500bd18fc7fd3dc673e84b6"
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "run": 3,
+      "date": "2026-10-08T07:57:50.719Z",
+      "settings": {
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "requestLatencyMs": 0,
+          "downloadThroughputKbps": 0,
+          "uploadThroughputKbps": 0,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "mobile": false,
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1,
+          "disabled": false
+        }
+      },
+      "sha256": "f83a7f75dd5a9b8c21df815d1f2fe9ad0e282cc5afcdfb2f2bea4db16b7f848f"
+    }
+  ],
+  "sourceSha256": {
+    ".gitattributes": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e",
+    "CNAME": "11f195e50259af05663b0c4aa865e9a35bae1b238b2aacdb3f756ccd59793964",
+    "about.html": "839595e71125fcb280949bd43ec5275077d46a49a92cf9f2fc37c0ba12fcb37f",
+    "contact.html": "18c7c8ac000604e378b349fe11db6a6df93f40b445d9b06ab41fc29f220c27eb",
+    "css/styles.css": "39e6ed3a353f3d8be69afea2af1994c365be5c157b511c1d53c22a7bf776744a",
+    "images/domix/brand/domix-outline.webp": "a39f40127964eaa7c9274c26b89da398bfb52c2ca364e319f1a1854ab4b872bb",
+    "images/domix/brand/domix_logo.svg": "651bcde4efd25b753e9df3cd4ec328ff4a41f58196e805ae0edb9959ceb79da7",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-1.webp": "91cf3b1fc4bed98e328c7573e70fb0ec94db0d5669e2eeb2d8cfcda5d65b110e",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-11.webp": "76cdfa2607466a5c53481055dace717b49ab01a62b7fc046e258b2ea72d57dc3",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-12.webp": "cf0a7a71ef3eb58e7e20af3b9b8bd0f63e6f4cc94e11daa23ed086edc22b6080",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-14.webp": "b84f3597410beb9b0803b9b10039060c83dd6662af06be93f5a8f69994ce34ce",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-15.webp": "f36c20f845d2245925b7e771253cfbd271c391081075a925c0069d1cb6c4a3a0",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-16.webp": "1d946429c7f9b8399af8331a5a8f4cf0907f3006763000402db4794baa6823bf",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-2.webp": "3634269c74de3c26f7027eeda4a353f8ad056d3c41a9be700fc5ba4224ddfdc6",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-21.webp": "1eb7f1993330ed596d363846a971d4d9adb0e1256348d1c1021ad1e5ffb4dead",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-4.webp": "351385106b8c4c3c9821723cd4b023f694bd5a49b13e6db0af02ebd480e46f1d",
+    "images/domix/events/DiVINE Prottes 2026/DiVINE_Prottes_2026-8.webp": "de802fcd58a4988927de0c75236f26f32448bbc9df5907d4d33d108caf316683",
+    "images/domix/events/FlashOver 2026/FlashOver-bookings-background.webp": "065a38c6ecbd9b5e04bfe42b4d1cb3b59e30f47d7a4f639b39946accffd9ecc0",
+    "images/domix/events/FlashOver 2026/FlashOver_1-1.webp": "6b807f3cc7b503805061c6f3d4d2f58a81b0774a6c58dd43957d3e2e93756c09",
+    "images/domix/events/FlashOver 2026/FlashOver_1-2.webp": "1e04d8503a950ee491f5f32a537a366cf501ccf821d31e6a2077a414cd1d868b",
+    "images/domix/events/FlashOver 2026/FlashOver_1-3.webp": "65c03bbc75d343b0b9be070bf0f4caedb227c658c4d85326de469047f20035cf",
+    "images/domix/events/FlashOver 2026/FlashOver_1-4.webp": "711d4f6d951d127b1b65ac1f3b9b03722a04c3416533e861b1c65710ea32fb8d",
+    "images/domix/events/FlashOver 2026/FlashOver_1-8.webp": "482bbd5393818d8fa777904199f30bb6123048b9cfb78b4445594aad1cdcb6d4",
+    "images/domix/events/FlashOver 2026/FlashOver_2-5.webp": "5a601c9ac0e2a3905c681361408883b8db4a4ff60d86bc398e19314f9ae229d3",
+    "images/domix/events/FlashOver 2026/FlashOver_2-7.webp": "e358d97147015c59e9146fea7902d20705ba219d125192954d00e4db3323616b",
+    "images/domix/events/FlashOver 2026/NZ8_5328.webp": "8e8d2a3f2329d1b62514bcdd1c4c577a50d79cd93f4305ab9feb1539d64b7be7",
+    "images/domix/events/Hoefefest 2026/Hoefefest-01.webp": "9275f974c29a0d150d4899648b4437ff55ed1d520072cc667731df2632ad87d0",
+    "images/domix/events/Hoefefest 2026/Hoefefest-04.webp": "1d01c41192654f247b0b13c9506edf79a8119e74b92879cd233273607278b51f",
+    "images/domix/events/Hoefefest 2026/Hoefefest-05.webp": "a98a5eb9c0a0165961f49dd8bcdcd2960bdc5e058d42e369c9a192a45aa905fb",
+    "images/domix/events/Hoefefest 2026/Hoefefest-06.webp": "246f4fa4d0b32f10f45f18e3048e2ba99c1c2157e61a594b60f61b5fe7920272",
+    "images/domix/events/Hoefefest 2026/Hoefefest-10.webp": "271875f1c8a288f70a84c4f772393d319c6fbb711ae4e825a0b5e07175cf1464",
+    "images/domix/events/Hoefefest 2026/Hoefefest-11.webp": "8d3cb3a50b7b725a1d1664e8494b5b4a458ab5e5f41087298f9524a3d57063ce",
+    "images/domix/events/Hoefefest 2026/Hoefefest-14.webp": "26ca42e4016d5c56756b22eb61bf6afb70942f191b777fafe46079e18105a99f",
+    "images/domix/events/Hoefefest 2026/Hoefefest-16.webp": "95ecd57b6ef5d8a9693eeaf4852cd485966696da64f1731e56c11cb1aa45f019",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-1.webp": "0b3a0dcb703238a8bb79940d37075bbfa9081a10a8d7f41a96b0622d52b5070d",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-13.webp": "9de91da3a1d6d4fbac65739fb9ee2d7cc21c65a7756a061e8547c33bc8b48b45",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-3.webp": "fd0f50172ab0b7912ffac20792476f68b0df456f073307fe439cc482ca2ac2ac",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-5.webp": "8d38cb71a29cc074a27985a3823359c16963944389a54169c0ded2a33d3cc5c6",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-6.webp": "c1a98175f2f7e654eecbb9c9f9d944a59d8957df32bc2c9b497006afb8ec9c07",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff-8.webp": "f72b491931c399eb87e18bc1668ec382de82bc58b6a64119af96df329e404fbe",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff_Sponsoring-1.webp": "d37fe668637b2ece13a8b4079eee8d23253773758e96d75d82533804090dc73f",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff_Sponsoring-4.webp": "60167ec11af661a54020086fb9ce9133e00247e4476c731d45888505fb0ae463",
+    "images/domix/events/Holiday Kickoff 2026/Holiday-Kickoff_Sponsoring-8.webp": "4cee161e2a5a3282417f14270cba8b051c6455bd509d0e8f34050b463d4eb492",
+    "images/domix/events/Inferno 2025/Inferno-1.jpg": "04fd4d6da949ec7009f1c2c9b14cc51a56ab538399274c16cceb2c0607138d97",
+    "images/domix/events/Inferno 2025/Inferno-2.jpg": "9bb1e50f636133018b6c1f0a1e5327888268b79e6f6a00b57b4250653a09db7c",
+    "images/domix/events/Inferno 2025/Inferno-3.jpg": "72ceb572e15f36ca1db87707ac32d3dcd0a44cd3e8cfd9d43f517270cb7372e7",
+    "images/domix/events/Lange Einkaufsnacht 2026/Crowd-5.webp": "52c7d175da0845c40f4895bbbc385e260875bf95956f034c35be66a7a4af509d",
+    "images/domix/events/Lange Einkaufsnacht 2026/DOMIX-13.webp": "17a036b2b2ba57141b377436d21763dff5b610b349b864bb27430cf42a42891a",
+    "images/domix/events/Lange Einkaufsnacht 2026/DOMIX-14.webp": "5d143411a149d1c28d1843659efcafc91c905083a55d3e5c29a1339fbec2e5e1",
+    "images/domix/events/Lange Einkaufsnacht 2026/DOMIX-9.webp": "5c7dfb68bd11ec60f7de844d05cfb8b92eeb608055cb32ccb9ad73fd983fdfb5",
+    "images/domix/events/Lange Einkaufsnacht 2026/LangeEinkaufsnacht-8.webp": "fc441a8e6a227759965605a4dd09d5084f89588a82c3d738e42c5fdfeb1c30f2",
+    "images/domix/events/Lange Einkaufsnacht 2026/Marchfelder_Bank-1.webp": "28f95cf9ec5e1c1c35ac4a9edf6c90f8a55599d5d9ec4c80067031eaa9f4a9d1",
+    "images/domix/events/Lange Einkaufsnacht 2026/Marchfelder_Bank-8.webp": "937b8aacb2ce104cff98b4d8f2eeeb1f4f19c43298203564cde4bf917b213b5a",
+    "images/domix/events/Lange Einkaufsnacht 2026/Product_Showcase-1.webp": "35d017810a0b67d3d9e304b522863a571a33ccd066dd0d6497a0a833cadce6af",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-01.webp": "3a6990348ea2a895fc4f0ee44f4101836a3e543ab3e62783a1edcd318b55b4e0",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-03.webp": "a41e3fc4f621d8c2bf7046ac139684f922e14eb9f1b8edb5ad25a5191cf7841b",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-04.webp": "ccec189d2c530b96031f891f2399f9688852cb147a2276b516b366f8fa962a4e",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-07.webp": "d6568e626ef6434b6bd1c961f3ac4c9a5d8bc65d176d7b47dbb25b67ddd51069",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-08.webp": "d8bc344dcdf962149b28efca1b0569800054b73167fef164ba3ae7e1344ac226",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-09.webp": "4e3fcca65199b4172b79313686b1ed09dfd56beb3ce2f87e8713a60f8f84248f",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-17.webp": "929d1ba68e8d3f035c62531c107fdf864f122a25f502037c70687ae7c14efd41",
+    "images/domix/events/Lange Einkaufsnacht September 2026/Lange_Einkaufsnacht-18.webp": "667a8420f3bcd2a2c7aac787b031dc5a3a4708a30956cdc4a080156f0e376bfb",
+    "images/domix/events/Saturday & Bass 2026/Carousel1-02.webp": "194b3fefc69f62fba0c7f700bf8d106a6de8da4178aa54225e880965cb4dc0ea",
+    "images/domix/events/Saturday & Bass 2026/Carousel1-09.webp": "0dbf6e3b5972c33cd04ed17142cea56d59e965cd723ed90166a2e20d36aed280",
+    "images/domix/events/Saturday & Bass 2026/Carousel2-2.webp": "71cb631b857bb7e1f8f93f729d285bdb51de909499d71d50293fc6270278ada8",
+    "images/domix/events/Saturday & Bass 2026/Carousel2-5.webp": "4216d29b2d50503a0f88fe8b08ca3f9c2286c86c184610e18f9897a73adb18ea",
+    "images/domix/events/Saturday & Bass 2026/Outback_1-01.webp": "95314ade0ed9bbafdd7f3f1302854928b17f5cc834dec536ef951d7b765d35fb",
+    "images/domix/events/Saturday & Bass 2026/Outback_1-06.webp": "cdd935eb63c8a38bf5cb1c6f663023c29d29999baf4b62ccd1a4ac03ec97e92f",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-1.webp": "50a13cd801f7b6947b5d9738d45d13968477c627b4b2cfcd8cacdfa425949c7c",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-10.webp": "f167527b09136c996d982203c417ccfa1094480a434270dd72fa5381d34f57e8",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-2.webp": "0d8190fafe7a3dae4f757bb6acaee5c6733b9ac321f8b2d3698ed6b95e1bb9b3",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-3.webp": "b0427fafb6fde070483063367c6730744b8f50cac5bc905058887422959e4d43",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-4.webp": "71ec7396882a7d53c8ae261102efa767efbaac4022623ce3b09df2c84291f055",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-5.webp": "795fb82530c481d638ce42ca319716bf74f78de491e31c2ddf423af3da0d4b6e",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-6.webp": "d3060f03d79f5c921b69360fc8cd6e099cf327da3ee079c60de6367c93a6b602",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-7.webp": "7a9018086f65401f59c6bb675e239f930521f7153fd5b02ce57a3646631e47e2",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-8.webp": "82637a850ed4c5e64a42f26d13d1d2dceeb767c7b3a35f98b2277627b6a7e878",
+    "images/domix/events/THE BLOWING Marchegg 2026/The-Blowing-9.webp": "a5d20f32f008aa24be3bdcfc259ad8493955c21af614883e6ee4571b58b79264",
+    "images/domix/hero/equipment.webp": "a2e09694eb8dd95c7eaa30f736c5c904456f737e5f83b7d09ddd265ad0405a4d",
+    "images/domix/hero/stage-main.webp": "2b1116c1625128a6bf273db736d72237aca1ed4ee009d4ded064d33360f8d083",
+    "images/domix/partners/marchfelder-bank-logo.png": "294d2af868e37a2c8af5609fe5041ab5d3e5249cbeb870638aed341ba28df23b",
+    "images/domix/playlists/club-control.webp": "0b91e49325ac56043999c9744ec8d42b4e89f155bbd4276a21ff7173903525e6",
+    "images/domix/playlists/nitelife.webp": "d5a2cd978939ad394c4337597b7fab6de2229d85d625d545d7560333361933d6",
+    "images/domix/playlists/rumblin.webp": "483428cf55ead1bf98da91bfb596558093d7889bfbf6a6c9aad538828ce0f52a",
+    "images/domix/sets/cafe-opera-tomorrowland-academy.png": "95245ce6110a0df1135781a1aeb0cb2cc1f5026c6915b9b4bcb2f72a219206e5",
+    "images/domix/sets/domix-extravadance.webp": "9b2be4210158464ebd4961182b30b863b88c278910f6ae1c975cccedf4484b6d",
+    "images/domix/sets/the-blowing-2026.webp": "6be4255d9fa3c1aad454ed80d9687e609ddcc807a76a2be09bb81c6277d87f12",
+    "images/social-preview/domix-about-preview.jpg": "70683d4783d68515b5afee72d0ad3ba287b0bc5448c09c1bcb0508906f6b4b22",
+    "images/social-preview/domix-contact-preview.jpg": "eef68df4b030acdfbbbf8a4a136368546d9f232171ab96ab904545013fc3ec4e",
+    "images/social-preview/domix-home-preview.jpg": "93a6e16c2fd30a6e57a87a8505b94de11b5e69ecb145515381a94ac2d9945e07",
+    "images/social-preview/domix-legal-preview.jpg": "93a6e16c2fd30a6e57a87a8505b94de11b5e69ecb145515381a94ac2d9945e07",
+    "images/social-preview/domix-music-preview.jpg": "72635f2cbf51b6bdb2c0e3741e1205c3eb803a1e796caf96ba93d1478bff4b34",
+    "images/social-preview/domix-shows-preview.jpg": "0fdb7df3865ee7d62e449b5de8026ed041a305d7dcb4b9efb27aed76ac62e39a",
+    "images/social/instagram-icon.png": "2ae448736d20168fd3d49f00d90397e2ba2735ddb23409f6dd7fc64f57b3f664",
+    "images/social/linktree-more.svg": "6bfa030f2249f41d06e0898b0a8e38e8ccce9a014a6b3e48a7ae8f4e7622466e",
+    "images/social/soundcloud-icon.png": "4f8c21919f2f44ca87f7f423fefcbffb6483f628a58d93f96f328a3b727c3847",
+    "images/social/tiktok-icon.svg": "c7f456eb0eb5b0b299d1f675e0e58334bf64d7edc4c56bbdbff75e3f2f9dff6a",
+    "index.html": "b85d4b21e2b8f7ad9d2eb358fd97dc7b2734ec027251d4ae58a4525ba529acd9",
+    "index_mobil.html": "ca15a87e17c0012197382fa0ad1ee34f305785322746ac3265d49acfde39f7d2",
+    "js/site.js": "1d236acd34f30ab33b241fe62128b8685ecf9d9943584e33940677eec2eb6362",
+    "legal-privacy.html": "73c2794ac89c0006c34b54c16cf7005d528fe61e0a45f4e7fe1f0d7d84550616",
+    "music.html": "7d7ffd3b25a2452c373436f3b9bcea0a86814a7b62e73ca81c73af3d442f244c",
+    "releases/energy-extravadance-24-07-2026/preview.mp3": "8316117e5ebe969fe1635ee78c97f2d9244b724b861e43a6cf4aee71b8c696eb",
+    "releases/remixes/hotel-room-service-x-i-adore-you/cover.webp": "638b54a1b4c24de49b9ef30e5ae63fdee57c2ef961f6361e620e449775f5f37c",
+    "releases/remixes/hotel-room-service-x-i-adore-you/preview.mp3": "0721d15b280f9f26eabcaaa1ed3cd81fe6eaf61195fdb364ed412194a8c1c045",
+    "releases/remixes/in-da-club-x-i-need-a-dollar/cover.webp": "d7dc697788954b5efdb117b97aeb33159c81eb13bdb0b188c958acfbae81938b",
+    "releases/remixes/in-da-club-x-i-need-a-dollar/preview.mp3": "8775501d37527bd682f54f963a98614e5e92a18312f208995b420942aa8772d0",
+    "releases/remixes/mondschein-x-strangers/cover.webp": "da9785b8914cf6629f5b56edbf714f2c5fa1a2c27b7b157fb18c77be6979a157",
+    "releases/remixes/mondschein-x-strangers/preview.mp3": "db8c55a2a5254ead6a29280a9f6934adbbb638821632d5dc24c24209686b779d",
+    "releases/remixes/set-fire-to-the-rain-x-on-and-on/cover.webp": "5473429611dad8d4c29e0df3c4bfeaabe8e0f0b01cfd1fbc554a8499bc16416f",
+    "releases/remixes/set-fire-to-the-rain-x-on-and-on/preview.mp3": "5580bd272615fc7ff403bbae68300089803d547c527aa39b7a056974e3d602d2",
+    "releases/remixes/smells-like-teen-spirit/cover.webp": "05e77356127fdd9d23cf7dbb6659d241e94d5ac36c2c99e89e9f40c7cb40f204",
+    "releases/remixes/smells-like-teen-spirit/preview.mp3": "b7f6149643ab9de9654aaf3109ae6d290815d358fb1bc34090feb060ef6cb65b",
+    "releases/remixes/starships-x-stay-focused/cover.webp": "69da84b1072bc292aa8dd7e33a57b9647b58d0ec2380a19ff1590b1e9f7c7216",
+    "releases/remixes/starships-x-stay-focused/preview.mp3": "488c9e86497950184a89e4039489649f4fae4d3f872773166d8b6fe49283e94a",
+    "releases/remixes/traum-x-intoxicated/cover.webp": "4527cb5704b5f563f7f1138f65c7334b75961effd64c86fc290c38b018b6c182",
+    "releases/remixes/traum-x-intoxicated/preview.mp3": "15a7857c7bf2352c2db060978df19846d4ff0fcad3baffab45c1170c6c44b7d3",
+    "releases/remixes/where-have-you-been/cover.png": "0ff1dbaa0c26d5909ecc494d2e7cdfbdb10cc5b274c6edbb9c97c85d975f422a",
+    "releases/remixes/where-have-you-been/preview.mp3": "975fdff3dcb8e44ec93ff854eba7341c11489e08d8dc2554f9dfa7527d09c209",
+    "releases/remixes/wissen-wer-der-babo-ist-x-breathe/cover.webp": "3697e3d9e94383fbccfe6533dca085687d4d178cd84973db48088365341a2d40",
+    "releases/remixes/wissen-wer-der-babo-ist-x-breathe/preview.mp3": "bf9b223afbd688ba3700c868cb0964287e84f44f438f3dac8a87f87324019fad",
+    "releases/starships-x-stay-focused/cover.webp": "69da84b1072bc292aa8dd7e33a57b9647b58d0ec2380a19ff1590b1e9f7c7216",
+    "releases/starships-x-stay-focused/starships-x-stay-focused-domix-mashup.mp3": "848fca338a6b0dbc6ce2bbee666290bdf111dc9fced06a4d961dfe2b291ceffb",
+    "shows.html": "f1ba818cf7d102e28605a0e5ba4797b5545be85e59005a51e5e7343b86b4beed",
+    "images/social/instagram-icon.webp": "1c4254ea186273426ce33b830bf76cbcb5146d9f2bf7163c5ab40c2a1fb24b2a",
+    "images/social/soundcloud-icon.webp": "d4851316f7abcf4cd3e488001276e2508b1ff44188b4b8786e059a9166476573",
+    "images/domix/sets/cafe-opera-tomorrowland-academy.webp": "17dc7898abb4d635a2c9c662745bd5402254ac3f12d842fd29f16041ce1c9371",
+    "releases/remixes/where-have-you-been/cover.webp": "e671117bfe9c8643b0c753c1ff2215e948113266391a685c61e307305539c0b3"
+  }
+}

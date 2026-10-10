@@ -1585,8 +1585,8 @@ html.page-loader-pending body::after {
 }
 
 .site-footer-socials a[aria-label="Instagram"]::after {
-    -webkit-mask: url("../images/social/instagram-icon.png") center / 21px 21px no-repeat;
-    mask: url("../images/social/instagram-icon.png") center / 21px 21px no-repeat;
+    -webkit-mask: url("../images/social/instagram-icon.webp") center / 21px 21px no-repeat;
+    mask: url("../images/social/instagram-icon.webp") center / 21px 21px no-repeat;
 }
 
 .site-footer-socials a[aria-label="TikTok"]::after {
@@ -1595,8 +1595,8 @@ html.page-loader-pending body::after {
 }
 
 .site-footer-socials a[aria-label="SoundCloud"]::after {
-    -webkit-mask: url("../images/social/soundcloud-icon.png") center / 24px 24px no-repeat;
-    mask: url("../images/social/soundcloud-icon.png") center / 24px 24px no-repeat;
+    -webkit-mask: url("../images/social/soundcloud-icon.webp") center / 24px 24px no-repeat;
+    mask: url("../images/social/soundcloud-icon.webp") center / 24px 24px no-repeat;
 }
 
 .site-footer-socials img {
@@ -7393,6 +7393,11 @@ html.screen-ratio-16-10 .domix-equipment-wrapper::after {
         color: var(--domix-white);
         text-align: center;
         transform: none;
+        pointer-events: none;
+    }
+
+    .show-lightbox-caption > * {
+        pointer-events: auto;
     }
 
     .show-lightbox-caption::before {

@@ -1,0 +1,1232 @@
+{
+  "performance": [
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 87,
+      "LCP": 4128.6544,
+      "CLS": 0,
+      "FCP": 903.6543999999999,
+      "TBT": 0,
+      "SI": 1145.9100020034814,
+      "bytes": 1216863,
+      "requests": 33
+    },
+    {
+      "phase": "before",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 787.0387499999999,
+      "CLS": 0,
+      "FCP": 243.74720000000002,
+      "TBT": 0,
+      "SI": 442.3839198294562,
+      "bytes": 2724904,
+      "requests": 36
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 89,
+      "LCP": 3754.2932,
+      "CLS": 0,
+      "FCP": 1054.2932,
+      "TBT": 0,
+      "SI": 1054.2932,
+      "bytes": 1050672,
+      "requests": 22
+    },
+    {
+      "phase": "before",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 724.2851,
+      "CLS": 0,
+      "FCP": 244.2851,
+      "TBT": 0,
+      "SI": 325.40374442337315,
+      "bytes": 2481129,
+      "requests": 24
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 99,
+      "LCP": 2103.8438,
+      "CLS": 0,
+      "FCP": 1053.8438,
+      "TBT": 0,
+      "SI": 1053.8438,
+      "bytes": 451910,
+      "requests": 16
+    },
+    {
+      "phase": "before",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 549.644,
+      "CLS": 0,
+      "FCP": 249.644,
+      "TBT": 0,
+      "SI": 356.1950465448417,
+      "bytes": 3560965,
+      "requests": 24
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 99,
+      "LCP": 2104.2482,
+      "CLS": 0,
+      "FCP": 904.2482,
+      "TBT": 0,
+      "SI": 913.33825601223,
+      "bytes": 462055,
+      "requests": 15
+    },
+    {
+      "phase": "before",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 463.96219999999994,
+      "CLS": 0,
+      "FCP": 243.9622,
+      "TBT": 0,
+      "SI": 319.13318249206935,
+      "bytes": 566534,
+      "requests": 16
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 96,
+      "LCP": 2705.2327999999998,
+      "CLS": 0,
+      "FCP": 905.2328,
+      "TBT": 0,
+      "SI": 905.2328,
+      "bytes": 1067608,
+      "requests": 25
+    },
+    {
+      "phase": "before",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 564.4886000000001,
+      "CLS": 0,
+      "FCP": 244.48860000000002,
+      "TBT": 0,
+      "SI": 305.29244899843303,
+      "bytes": 1067608,
+      "requests": 25
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 99,
+      "LCP": 2254.62495,
+      "CLS": 0,
+      "FCP": 1053.1203,
+      "TBT": 0,
+      "SI": 1053.1203,
+      "bytes": 292733,
+      "requests": 15
+    },
+    {
+      "phase": "before",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 325.4248,
+      "CLS": 0,
+      "FCP": 244.9201,
+      "TBT": 0,
+      "SI": 261.3129091641031,
+      "bytes": 292733,
+      "requests": 15
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 89,
+      "LCP": 3762.4447499999997,
+      "CLS": 0,
+      "FCP": 908.2964999999999,
+      "TBT": 0,
+      "SI": 1435.527979989185,
+      "bytes": 1128350,
+      "requests": 24
+    },
+    {
+      "phase": "after",
+      "file": "index.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 730.97235,
+      "CLS": 0,
+      "FCP": 247.31490000000002,
+      "TBT": 0,
+      "SI": 429.131349247099,
+      "bytes": 2498347,
+      "requests": 27
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 91,
+      "LCP": 3530.7516000000005,
+      "CLS": 0,
+      "FCP": 905.7516,
+      "TBT": 0,
+      "SI": 905.7516,
+      "bytes": 962404,
+      "requests": 18
+    },
+    {
+      "phase": "after",
+      "file": "shows.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 726.6733,
+      "CLS": 0,
+      "FCP": 246.67329999999998,
+      "TBT": 0,
+      "SI": 398.47916820254807,
+      "bytes": 2254817,
+      "requests": 19
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 99,
+      "LCP": 2103.9161,
+      "CLS": 0,
+      "FCP": 1053.6709,
+      "TBT": 0,
+      "SI": 1053.9161,
+      "bytes": 363753,
+      "requests": 12
+    },
+    {
+      "phase": "after",
+      "file": "music.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 550.8858,
+      "CLS": 0,
+      "FCP": 250.88580000000002,
+      "TBT": 0,
+      "SI": 309.81093630527806,
+      "bytes": 2910554,
+      "requests": 20
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 99,
+      "LCP": 2104.4640999999997,
+      "CLS": 0,
+      "FCP": 904.4640999999999,
+      "TBT": 0,
+      "SI": 904.4640999999999,
+      "bytes": 373538,
+      "requests": 12
+    },
+    {
+      "phase": "after",
+      "file": "about.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 468.55320000000006,
+      "CLS": 0,
+      "FCP": 248.5532,
+      "TBT": 0,
+      "SI": 397.9243518983642,
+      "bytes": 478017,
+      "requests": 13
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 96,
+      "LCP": 2706.7918,
+      "CLS": 0,
+      "FCP": 906.7918,
+      "TBT": 0,
+      "SI": 995.354388096297,
+      "bytes": 979096,
+      "requests": 21
+    },
+    {
+      "phase": "after",
+      "file": "contact.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 565.8001,
+      "CLS": 0,
+      "FCP": 245.8001,
+      "TBT": 0,
+      "SI": 317.77853233772987,
+      "bytes": 979096,
+      "requests": 21
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "mobile",
+      "runs": 3,
+      "score": 100,
+      "LCP": 1358.7549,
+      "CLS": 0,
+      "FCP": 1057.5265,
+      "TBT": 0,
+      "SI": 1057.5265,
+      "bytes": 204215,
+      "requests": 11
+    },
+    {
+      "phase": "after",
+      "file": "legal-privacy.html",
+      "formFactor": "desktop",
+      "runs": 3,
+      "score": 100,
+      "LCP": 489.8443500000001,
+      "CLS": 0,
+      "FCP": 246.5874,
+      "TBT": 0,
+      "SI": 256.741971006893,
+      "bytes": 204215,
+      "requests": 11
+    }
+  ],
+  "browsers": {
+    "chromium": {
+      "version": "154.0.8037.98",
+      "pages": 66,
+      "overflow": [],
+      "checks": [
+        {
+          "name": "shows expand/collapse 390",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 390",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 390",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 390",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 390",
+          "passed": true
+        },
+        {
+          "name": "navigation 390",
+          "passed": true
+        },
+        {
+          "name": "shows expand/collapse 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 1440",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 1440",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 1440",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 1440",
+          "passed": true
+        },
+        {
+          "name": "navigation 1440",
+          "passed": true
+        }
+      ],
+      "errors": [
+        {
+          "label": "index.html@320",
+          "type": "console",
+          "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "label": "interactions@390",
+          "type": "console",
+          "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "label": "interactions@1440",
+          "type": "console",
+          "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        }
+      ]
+    },
+    "firefox": {
+      "version": "157.0",
+      "pages": 12,
+      "overflow": [],
+      "checks": [
+        {
+          "name": "shows expand/collapse 390",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 390",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 390",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 390",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 390",
+          "passed": true
+        },
+        {
+          "name": "navigation 390",
+          "passed": true
+        },
+        {
+          "name": "shows expand/collapse 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 1440",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 1440",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 1440",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 1440",
+          "passed": true
+        },
+        {
+          "name": "navigation 1440",
+          "passed": true
+        }
+      ],
+      "errors": [
+        {
+          "label": "interactions@390",
+          "type": "request",
+          "url": "http://127.0.0.1:4174/releases/remixes/starships-x-stay-focused/preview.mp3",
+          "message": "NS_ERROR_PARSED_DATA_CACHED"
+        },
+        {
+          "label": "interactions@1440",
+          "type": "request",
+          "url": "http://127.0.0.1:4174/releases/remixes/starships-x-stay-focused/preview.mp3",
+          "message": "NS_ERROR_PARSED_DATA_CACHED"
+        }
+      ]
+    },
+    "webkit": {
+      "version": "27.2",
+      "pages": 12,
+      "overflow": [],
+      "checks": [
+        {
+          "name": "shows expand/collapse 390",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 390",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 390",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 390",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 390",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 390",
+          "passed": true
+        },
+        {
+          "name": "navigation 390",
+          "passed": true
+        },
+        {
+          "name": "shows expand/collapse 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery controls and keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "gallery close keyboard 1440",
+          "passed": true
+        },
+        {
+          "name": "music search and toggle 1440",
+          "passed": true
+        },
+        {
+          "name": "featured audio play/pause/seek 1440",
+          "passed": true
+        },
+        {
+          "name": "remix audio play/pause 1440",
+          "passed": true
+        },
+        {
+          "name": "legacy redirect 1440",
+          "passed": true
+        },
+        {
+          "name": "navigation 1440",
+          "passed": true
+        }
+      ],
+      "errors": []
+    }
+  },
+  "screenshots": {
+    "chromium": {
+      "total": 35,
+      "exact": 28,
+      "perceptualZero": 35,
+      "nonzero": []
+    },
+    "firefox": {
+      "total": 34,
+      "exact": 32,
+      "perceptualZero": 34,
+      "nonzero": []
+    },
+    "webkit": {
+      "total": 34,
+      "exact": 33,
+      "perceptualZero": 34,
+      "nonzero": []
+    }
+  },
+  "regressions": {
+    "before": [
+      {
+        "name": "Malformed fragment does not throw",
+        "passed": false,
+        "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'URI malformed'\n+ ]\n- []\n",
+        "errors": [
+          "URI malformed"
+        ]
+      },
+      {
+        "name": "Historical partner deep link expands correct show",
+        "passed": false,
+        "message": "Expected values to be strictly equal:\n\n'' !== null\n",
+        "errors": []
+      },
+      {
+        "name": "All gallery images decode",
+        "passed": true,
+        "detail": {
+          "count": 70,
+          "broken": []
+        },
+        "errors": []
+      },
+      {
+        "name": "Native keyboard button activation closes gallery",
+        "passed": false,
+        "message": "Expected values to be strictly equal:\n\n'false' !== 'true'\n",
+        "errors": []
+      },
+      {
+        "name": "Visible mobile preview is not blocked by caption",
+        "passed": false,
+        "message": "locator.click: Timeout 2500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.show-lightbox-preview').first()\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" data-index=\"9\" aria-label=\"Show image 10 of 10\" class=\"show-lightbox-preview show-lightbox-preview-previous\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"show-lightbox-caption\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"show-lightbox-caption\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    4 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"show-lightbox-caption\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+        "errors": []
+      },
+      {
+        "name": "Rapid audio replacement keeps latest track state",
+        "passed": false,
+        "message": "Expected values to be strictly equal:\n+ actual - expected\n\n+ null\n- 'wissen-wer-der-babo-ist-x-breathe'\n",
+        "errors": []
+      },
+      {
+        "name": "Seek before playback loads audio and starts preview",
+        "passed": true,
+        "detail": {
+          "time": 15.830463,
+          "duration": 66.061837
+        },
+        "errors": []
+      },
+      {
+        "name": "Pending seek cannot change a replacement track",
+        "passed": false,
+        "message": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'hotel-room-service-x-i-adore-you'\n- 'where-have-you-been'\n",
+        "errors": []
+      },
+      {
+        "name": "Failed hero image releases loader",
+        "passed": true,
+        "detail": {
+          "complete": true,
+          "cacheHit": false,
+          "total": 10,
+          "loaded": 9,
+          "failed": 1,
+          "urls": [
+            "http://127.0.0.1:4173/images/domix/brand/domix-outline.webp",
+            "http://127.0.0.1:4173/images/domix/brand/domix_logo.svg",
+            "http://127.0.0.1:4173/images/social/instagram-icon.png",
+            "http://127.0.0.1:4173/images/social/tiktok-icon.svg",
+            "http://127.0.0.1:4173/images/social/soundcloud-icon.png",
+            "http://127.0.0.1:4173/images/social/linktree-more.svg",
+            "http://127.0.0.1:4173/images/domix/hero/equipment.webp",
+            "http://127.0.0.1:4173/images/domix/hero/stage-main.webp"
+          ]
+        },
+        "errors": []
+      },
+      {
+        "name": "Cold slow load and warm reload",
+        "passed": true,
+        "detail": {
+          "cold": {
+            "time": 6551.300000011921,
+            "status": {
+              "complete": true,
+              "cacheHit": true,
+              "total": 10,
+              "loaded": 10,
+              "failed": 0,
+              "urls": [
+                "http://127.0.0.1:4173/images/domix/brand/domix-outline.webp",
+                "http://127.0.0.1:4173/images/domix/brand/domix_logo.svg",
+                "http://127.0.0.1:4173/images/social/instagram-icon.png",
+                "http://127.0.0.1:4173/images/social/tiktok-icon.svg",
+                "http://127.0.0.1:4173/images/social/soundcloud-icon.png",
+                "http://127.0.0.1:4173/images/social/linktree-more.svg",
+                "http://127.0.0.1:4173/images/domix/hero/equipment.webp",
+                "http://127.0.0.1:4173/images/domix/hero/stage-main.webp"
+              ]
+            }
+          },
+          "warm": {
+            "time": 341,
+            "status": {
+              "complete": true,
+              "cacheHit": true,
+              "total": 10,
+              "loaded": 10,
+              "failed": 0,
+              "urls": [
+                "http://127.0.0.1:4173/images/domix/brand/domix-outline.webp",
+                "http://127.0.0.1:4173/images/domix/brand/domix_logo.svg",
+                "http://127.0.0.1:4173/images/social/instagram-icon.png",
+                "http://127.0.0.1:4173/images/social/tiktok-icon.svg",
+                "http://127.0.0.1:4173/images/social/soundcloud-icon.png",
+                "http://127.0.0.1:4173/images/social/linktree-more.svg",
+                "http://127.0.0.1:4173/images/domix/hero/equipment.webp",
+                "http://127.0.0.1:4173/images/domix/hero/stage-main.webp"
+              ]
+            }
+          }
+        },
+        "errors": []
+      },
+      {
+        "name": "200 percent zoom and touch gallery swipe",
+        "passed": true,
+        "detail": {
+          "scale": 2,
+          "syntheticTouch": true
+        },
+        "errors": []
+      },
+      {
+        "name": "SoundCloud consent creates one player, no early third party request",
+        "passed": true,
+        "detail": {
+          "external": [
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2361578294&color=%23ffd43b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true",
+            "https://dwt.soundcloud.com/tags.js",
+            "https://widget.sndcdn.com/widget-5-cd8b86ff1046.js",
+            "https://widget.sndcdn.com/widget-8-9db0f74d696f.js",
+            "https://widget.sndcdn.com/widget-9-98da480ea19c.js",
+            "blob:https://w.soundcloud.com/d45d67e6-5e54-404d-96cb-877f2024acc7",
+            "https://dwt.soundcloud.com/js/",
+            "https://widget.sndcdn.com/assets/images/logo-200x120-3190df52.png",
+            "https://widget.sndcdn.com/widget-0-6b4c6170cc3c.js",
+            "https://widget.sndcdn.com/widget-1-2a294ec9db9c.js"
+          ]
+        },
+        "errors": []
+      },
+      {
+        "name": "Repeated search/toggle does not accumulate DOM or event listeners",
+        "passed": true,
+        "detail": {
+          "before": {
+            "JSEventListeners": 34,
+            "Nodes": 855,
+            "JSHeapUsedSize": 1510296
+          },
+          "after": {
+            "JSEventListeners": 34,
+            "Nodes": 855,
+            "JSHeapUsedSize": 1548856
+          }
+        },
+        "errors": []
+      }
+    ],
+    "after": [
+      {
+        "name": "Malformed fragment does not throw",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "Historical partner deep link expands correct show",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "All gallery images decode",
+        "passed": true,
+        "detail": {
+          "count": 70,
+          "broken": []
+        },
+        "errors": []
+      },
+      {
+        "name": "Native keyboard button activation closes gallery",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "Visible mobile preview is not blocked by caption",
+        "passed": true,
+        "errors": []
+      },
+      {
+        "name": "Rapid audio replacement keeps latest track state",
+        "passed": true,
+        "detail": {
+          "id": "wissen-wer-der-babo-ist-x-breathe",
+          "expected": "wissen-wer-der-babo-ist-x-breathe",
+          "src": "http://127.0.0.1:4174/releases/remixes/wissen-wer-der-babo-ist-x-breathe/preview.mp3"
+        },
+        "errors": []
+      },
+      {
+        "name": "Seek before playback loads audio and starts preview",
+        "passed": true,
+        "detail": {
+          "time": 15.830463,
+          "duration": 66.061837
+        },
+        "errors": []
+      },
+      {
+        "name": "Pending seek cannot change a replacement track",
+        "passed": true,
+        "detail": {
+          "id": "where-have-you-been",
+          "expected": "where-have-you-been",
+          "time": 0.0064
+        },
+        "errors": []
+      },
+      {
+        "name": "Failed hero image releases loader",
+        "passed": true,
+        "detail": {
+          "complete": true,
+          "cacheHit": false,
+          "total": 10,
+          "loaded": 9,
+          "failed": 1,
+          "urls": [
+            "http://127.0.0.1:4174/images/domix/brand/domix-outline.webp",
+            "http://127.0.0.1:4174/images/domix/brand/domix_logo.svg",
+            "http://127.0.0.1:4174/images/social/instagram-icon.webp",
+            "http://127.0.0.1:4174/images/social/tiktok-icon.svg",
+            "http://127.0.0.1:4174/images/social/soundcloud-icon.webp",
+            "http://127.0.0.1:4174/images/social/linktree-more.svg",
+            "http://127.0.0.1:4174/images/domix/hero/equipment.webp",
+            "http://127.0.0.1:4174/images/domix/hero/stage-main.webp"
+          ]
+        },
+        "errors": []
+      },
+      {
+        "name": "Cold slow load and warm reload",
+        "passed": true,
+        "detail": {
+          "cold": {
+            "time": 6045.800000011921,
+            "status": {
+              "complete": true,
+              "cacheHit": false,
+              "total": 10,
+              "loaded": 10,
+              "failed": 0,
+              "urls": [
+                "http://127.0.0.1:4174/images/domix/brand/domix-outline.webp",
+                "http://127.0.0.1:4174/images/domix/brand/domix_logo.svg",
+                "http://127.0.0.1:4174/images/social/instagram-icon.webp",
+                "http://127.0.0.1:4174/images/social/tiktok-icon.svg",
+                "http://127.0.0.1:4174/images/social/soundcloud-icon.webp",
+                "http://127.0.0.1:4174/images/social/linktree-more.svg",
+                "http://127.0.0.1:4174/images/domix/hero/equipment.webp",
+                "http://127.0.0.1:4174/images/domix/hero/stage-main.webp"
+              ]
+            }
+          },
+          "warm": {
+            "time": 323.59999999403954,
+            "status": {
+              "complete": true,
+              "cacheHit": true,
+              "total": 10,
+              "loaded": 10,
+              "failed": 0,
+              "urls": [
+                "http://127.0.0.1:4174/images/domix/brand/domix-outline.webp",
+                "http://127.0.0.1:4174/images/domix/brand/domix_logo.svg",
+                "http://127.0.0.1:4174/images/social/instagram-icon.webp",
+                "http://127.0.0.1:4174/images/social/tiktok-icon.svg",
+                "http://127.0.0.1:4174/images/social/soundcloud-icon.webp",
+                "http://127.0.0.1:4174/images/social/linktree-more.svg",
+                "http://127.0.0.1:4174/images/domix/hero/equipment.webp",
+                "http://127.0.0.1:4174/images/domix/hero/stage-main.webp"
+              ]
+            }
+          }
+        },
+        "errors": []
+      },
+      {
+        "name": "200 percent zoom and touch gallery swipe",
+        "passed": true,
+        "detail": {
+          "scale": 2,
+          "syntheticTouch": true
+        },
+        "errors": []
+      },
+      {
+        "name": "SoundCloud consent creates one player, no early third party request",
+        "passed": true,
+        "detail": {
+          "external": [
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2361578294&color=%23ffd43b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true",
+            "https://dwt.soundcloud.com/tags.js",
+            "https://widget.sndcdn.com/widget-5-cd8b86ff1046.js",
+            "https://widget.sndcdn.com/widget-8-9db0f74d696f.js",
+            "https://widget.sndcdn.com/widget-9-98da480ea19c.js",
+            "blob:https://w.soundcloud.com/7f177d00-36d3-430e-9d5f-565d319998c3",
+            "https://dwt.soundcloud.com/js/",
+            "https://widget.sndcdn.com/assets/images/logo-200x120-3190df52.png",
+            "https://widget.sndcdn.com/widget-0-6b4c6170cc3c.js",
+            "https://widget.sndcdn.com/widget-1-2a294ec9db9c.js",
+            "https://api-widget.soundcloud.com/resolve?url=https%3A//api.soundcloud.com/tracks/2361578294&format=json&client_id=gqKBMSuBw5rbN9rDRYPqKNvF17ovlObu&app_version=1787646387"
+          ]
+        },
+        "errors": []
+      },
+      {
+        "name": "Repeated search/toggle does not accumulate DOM or event listeners",
+        "passed": true,
+        "detail": {
+          "before": {
+            "JSEventListeners": 33,
+            "Nodes": 855,
+            "JSHeapUsedSize": 1503756
+          },
+          "after": {
+            "JSEventListeners": 33,
+            "Nodes": 855,
+            "JSHeapUsedSize": 1542800
+          }
+        },
+        "errors": []
+      }
+    ]
+  },
+  "content": [
+    {
+      "file": "index.html",
+      "equal": true
+    },
+    {
+      "file": "shows.html",
+      "equal": true
+    },
+    {
+      "file": "music.html",
+      "equal": true
+    },
+    {
+      "file": "about.html",
+      "equal": true
+    },
+    {
+      "file": "contact.html",
+      "equal": true
+    },
+    {
+      "file": "legal-privacy.html",
+      "equal": true
+    }
+  ],
+  "assets": [
+    {
+      "file": "images/domix/partners/marchfelder-bank-logo.png",
+      "target": "images/domix/partners/marchfelder-bank-logo.png",
+      "before": 1430246,
+      "after": 1292202,
+      "identical": true,
+      "visiblePixelsIdentical": true,
+      "rgbaSha256": "8f6c3b40b3f350b890c33456ba53804cf4efd04a7ece3e21c776b6bc88269785",
+      "applied": true
+    },
+    {
+      "file": "images/social/instagram-icon.png",
+      "target": "images/social/instagram-icon.webp",
+      "before": 127850,
+      "after": 41264,
+      "identical": false,
+      "visiblePixelsIdentical": true,
+      "rgbaSha256": "e158fc083c4f1221c4da556910823028dee5ed86eb445fadafa63c6ea55528ab",
+      "applied": true
+    },
+    {
+      "file": "images/social/soundcloud-icon.png",
+      "target": "images/social/soundcloud-icon.webp",
+      "before": 12236,
+      "after": 9862,
+      "identical": true,
+      "visiblePixelsIdentical": true,
+      "rgbaSha256": "0e625e2b2bd2319dd6d274cea17bfa37257c6fc434a26d44fd302a5d44ca6714",
+      "applied": true
+    },
+    {
+      "file": "images/domix/sets/cafe-opera-tomorrowland-academy.png",
+      "target": "images/domix/sets/cafe-opera-tomorrowland-academy.webp",
+      "before": 1656003,
+      "after": 1093748,
+      "identical": true,
+      "visiblePixelsIdentical": true,
+      "rgbaSha256": "95d28b581485eb7b7c9bc8cef25652ff46c04155339bed3658d04b8c48222747",
+      "applied": true
+    },
+    {
+      "file": "releases/remixes/where-have-you-been/cover.png",
+      "target": "releases/remixes/where-have-you-been/cover.webp",
+      "before": 632534,
+      "after": 268802,
+      "identical": true,
+      "visiblePixelsIdentical": true,
+      "rgbaSha256": "aa13693ad2ed99d076ea1b7a5aaee15de5d517df64ab9f3d725cfb69d3b61eaa",
+      "applied": true
+    }
+  ],
+  "links": [
+    {
+      "url": "https://domix-dj.com/",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-home-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://www.instagram.com/domix.dj",
+      "status": 200
+    },
+    {
+      "url": "https://www.tiktok.com/@domix.dj",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj",
+      "status": 200
+    },
+    {
+      "url": "https://linktr.ee/domix.dj",
+      "status": 200
+    },
+    {
+      "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2361578294&color=%23ffd43b&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/energy-extravadance-radio-set-24-07-2026",
+      "status": 200
+    },
+    {
+      "url": "https://www.marchfelderbank.at/",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/shows.html",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-shows-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://ntry.at/fomowodo2026",
+      "status": 200
+    },
+    {
+      "url": "https://www.theblowing.at",
+      "status": 200
+    },
+    {
+      "url": "https://www.instagram.com/flashover.loidesthal/",
+      "status": 200
+    },
+    {
+      "url": "https://www.kj-obersdorf.at",
+      "status": 200
+    },
+    {
+      "url": "https://linktr.ee/divine_prottes",
+      "status": 200
+    },
+    {
+      "url": "https://www.marchfelderbank.at/gans-lange-einkaufsnacht-mit-dj-domix/",
+      "status": 200
+    },
+    {
+      "url": "https://www.instagram.com/p/DWGyv8ljFt0/",
+      "status": 200
+    },
+    {
+      "url": "https://www.instagram.com/inferno_matzen/",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/music.html",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-music-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://open.spotify.com/user/wjpa1p08lfas71s4kos5930pk?si=b0d5a2db21474872",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/domix-the-blowing-marchegg-2026-live-set",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/starships-x-stayfocused-domix-mashup",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/cafe-opera-stockholm-domix",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/hotel-room-service-x-i-adore-you-domix-afro-house-mashup",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/where-have-you-been",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/traum-x-intoxicated-cro-x-martin-solveig-x-sam-collins-sky-phill-batz-mashup-domix-edit-1",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/restricted-smells-like-teen-spirit-domix-techno-edit",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/mondschein-domix-dnb-mashup",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/in-da-club-x-i-need-a-dollar-domix-edit-1",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/domix_dj/set-fire-to-the-rain-x-on-on",
+      "status": 200
+    },
+    {
+      "url": "https://open.spotify.com/playlist/1GiP3hHt4zSkTb7bd1Gqcz?si=79c487ecb9614d5e",
+      "status": 200
+    },
+    {
+      "url": "https://open.spotify.com/playlist/6gSRVVYjM5Wu6qV8qIWpDr?si=383cd3094cf84a24",
+      "status": 200
+    },
+    {
+      "url": "https://open.spotify.com/playlist/1XzXc9NFBpruA7BME4FpKY?si=26bfad862b2a4b83",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/about.html",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-about-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://www.marchfelderbank.at/story/dj-domix/",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/contact.html",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-contact-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://ig.me/m/domix.dj",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/legal-privacy.html",
+      "status": 200
+    },
+    {
+      "url": "https://domix-dj.com/images/social-preview/domix-legal-preview.jpg",
+      "status": 200
+    },
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "status": 200
+    },
+    {
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/pages/privacy",
+      "status": 200
+    },
+    {
+      "url": "https://soundcloud.com/pages/cookies",
+      "status": 200
+    },
+    {
+      "url": "https://www.ionos.de/terms-gtc/datenschutzerklaerung/",
+      "status": 200
+    },
+    {
+      "url": "https://dsb.gv.at/eingabe-an-die-dsb/beschwerde",
+      "status": 200
+    }
+  ]
+}
